@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* UID465AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* UID465AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* UID465ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* UID465ViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* UID465ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* UID465ViewController.m */; };
+		6C5CF3891463185500B5AF86 /* ViewCompaniesViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF3871463185500B5AF86 /* ViewCompaniesViewContoller.m */; };
+		6C5CF38A1463185500B5AF86 /* ViewCompaniesViewContoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CF3881463185500B5AF86 /* ViewCompaniesViewContoller.xib */; };
+		6C5CF3FA1463239600B5AF86 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF3F91463239600B5AF86 /* Company.m */; };
+		6C5CF41814632D7C00B5AF86 /* WaitTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF41614632D7C00B5AF86 /* WaitTimeViewController.m */; };
+		6C5CF41914632D7C00B5AF86 /* WaitTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CF41714632D7C00B5AF86 /* WaitTimeViewController.xib */; };
+		6C5CF4B21463677100B5AF86 /* UpdateWaitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF4B01463677100B5AF86 /* UpdateWaitViewController.m */; };
+		6C5CF4B31463677100B5AF86 /* UpdateWaitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CF4B11463677100B5AF86 /* UpdateWaitViewController.xib */; };
+		6C5CF5761464A76E00B5AF86 /* CompanyInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF5741464A76E00B5AF86 /* CompanyInformationViewController.m */; };
+		6C5CF5771464A76E00B5AF86 /* CompanyInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CF5751464A76E00B5AF86 /* CompanyInformationViewController.xib */; };
+		6C5CF6381464CA3200B5AF86 /* CreatePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF6361464CA3200B5AF86 /* CreatePlanViewController.m */; };
+		6C5CF6391464CA3200B5AF86 /* CreatePlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CF6371464CA3200B5AF86 /* CreatePlanViewController.xib */; };
+		6C5CF6A61465BAA800B5AF86 /* QualifyingCompaniesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF6A41465BAA800B5AF86 /* QualifyingCompaniesViewController.m */; };
+		6C5CF6A71465BAA800B5AF86 /* QualifyingCompaniesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CF6A51465BAA800B5AF86 /* QualifyingCompaniesViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* UID465AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UID465AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* UID465AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UID465AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* UID465.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UID465.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* UID465ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UID465ViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* UID465ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UID465ViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* UID465ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UID465ViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* UID465_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UID465_Prefix.pch; sourceTree = "<group>"; };
+		6C5CF3861463185500B5AF86 /* ViewCompaniesViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCompaniesViewContoller.h; sourceTree = "<group>"; };
+		6C5CF3871463185500B5AF86 /* ViewCompaniesViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCompaniesViewContoller.m; sourceTree = "<group>"; };
+		6C5CF3881463185500B5AF86 /* ViewCompaniesViewContoller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewCompaniesViewContoller.xib; path = Classes/ViewCompaniesViewContoller.xib; sourceTree = "<group>"; };
+		6C5CF3F81463239600B5AF86 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		6C5CF3F91463239600B5AF86 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		6C5CF41514632D7C00B5AF86 /* WaitTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitTimeViewController.h; sourceTree = "<group>"; };
+		6C5CF41614632D7C00B5AF86 /* WaitTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitTimeViewController.m; sourceTree = "<group>"; };
+		6C5CF41714632D7C00B5AF86 /* WaitTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WaitTimeViewController.xib; path = Classes/WaitTimeViewController.xib; sourceTree = "<group>"; };
+		6C5CF4AF1463677100B5AF86 /* UpdateWaitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateWaitViewController.h; sourceTree = "<group>"; };
+		6C5CF4B01463677100B5AF86 /* UpdateWaitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateWaitViewController.m; sourceTree = "<group>"; };
+		6C5CF4B11463677100B5AF86 /* UpdateWaitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UpdateWaitViewController.xib; path = Classes/UpdateWaitViewController.xib; sourceTree = "<group>"; };
+		6C5CF5731464A76E00B5AF86 /* CompanyInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyInformationViewController.h; sourceTree = "<group>"; };
+		6C5CF5741464A76E00B5AF86 /* CompanyInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyInformationViewController.m; sourceTree = "<group>"; };
+		6C5CF5751464A76E00B5AF86 /* CompanyInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CompanyInformationViewController.xib; path = Classes/CompanyInformationViewController.xib; sourceTree = "<group>"; };
+		6C5CF6351464CA3200B5AF86 /* CreatePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePlanViewController.h; sourceTree = "<group>"; };
+		6C5CF6361464CA3200B5AF86 /* CreatePlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePlanViewController.m; sourceTree = "<group>"; };
+		6C5CF6371464CA3200B5AF86 /* CreatePlanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CreatePlanViewController.xib; path = Classes/CreatePlanViewController.xib; sourceTree = "<group>"; };
+		6C5CF6A31465BAA800B5AF86 /* QualifyingCompaniesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualifyingCompaniesViewController.h; sourceTree = "<group>"; };
+		6C5CF6A41465BAA800B5AF86 /* QualifyingCompaniesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualifyingCompaniesViewController.m; sourceTree = "<group>"; };
+		6C5CF6A51465BAA800B5AF86 /* QualifyingCompaniesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QualifyingCompaniesViewController.xib; path = Classes/QualifyingCompaniesViewController.xib; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* UID465-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UID465-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6C5CF3861463185500B5AF86 /* ViewCompaniesViewContoller.h */,
+				6C5CF3871463185500B5AF86 /* ViewCompaniesViewContoller.m */,
+				1D3623240D0F684500981E51 /* UID465AppDelegate.h */,
+				1D3623250D0F684500981E51 /* UID465AppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* UID465ViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* UID465ViewController.m */,
+				6C5CF3F81463239600B5AF86 /* Company.h */,
+				6C5CF3F91463239600B5AF86 /* Company.m */,
+				6C5CF41514632D7C00B5AF86 /* WaitTimeViewController.h */,
+				6C5CF41614632D7C00B5AF86 /* WaitTimeViewController.m */,
+				6C5CF4AF1463677100B5AF86 /* UpdateWaitViewController.h */,
+				6C5CF4B01463677100B5AF86 /* UpdateWaitViewController.m */,
+				6C5CF5731464A76E00B5AF86 /* CompanyInformationViewController.h */,
+				6C5CF5741464A76E00B5AF86 /* CompanyInformationViewController.m */,
+				6C5CF6351464CA3200B5AF86 /* CreatePlanViewController.h */,
+				6C5CF6361464CA3200B5AF86 /* CreatePlanViewController.m */,
+				6C5CF6A31465BAA800B5AF86 /* QualifyingCompaniesViewController.h */,
+				6C5CF6A41465BAA800B5AF86 /* QualifyingCompaniesViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* UID465.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* UID465_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C5CF6A51465BAA800B5AF86 /* QualifyingCompaniesViewController.xib */,
+				6C5CF6371464CA3200B5AF86 /* CreatePlanViewController.xib */,
+				6C5CF5751464A76E00B5AF86 /* CompanyInformationViewController.xib */,
+				6C5CF4B11463677100B5AF86 /* UpdateWaitViewController.xib */,
+				6C5CF41714632D7C00B5AF86 /* WaitTimeViewController.xib */,
+				6C5CF3881463185500B5AF86 /* ViewCompaniesViewContoller.xib */,
+				2899E5210DE3E06400AC0155 /* UID465ViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* UID465-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* UID465 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "UID465" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UID465;
+			productName = UID465;
+			productReference = 1D6058910D05DD3D006BFB54 /* UID465.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UID465" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* UID465 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* UID465ViewController.xib in Resources */,
+				6C5CF38A1463185500B5AF86 /* ViewCompaniesViewContoller.xib in Resources */,
+				6C5CF41914632D7C00B5AF86 /* WaitTimeViewController.xib in Resources */,
+				6C5CF4B31463677100B5AF86 /* UpdateWaitViewController.xib in Resources */,
+				6C5CF5771464A76E00B5AF86 /* CompanyInformationViewController.xib in Resources */,
+				6C5CF6391464CA3200B5AF86 /* CreatePlanViewController.xib in Resources */,
+				6C5CF6A71465BAA800B5AF86 /* QualifyingCompaniesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* UID465AppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* UID465ViewController.m in Sources */,
+				6C5CF3891463185500B5AF86 /* ViewCompaniesViewContoller.m in Sources */,
+				6C5CF3FA1463239600B5AF86 /* Company.m in Sources */,
+				6C5CF41814632D7C00B5AF86 /* WaitTimeViewController.m in Sources */,
+				6C5CF4B21463677100B5AF86 /* UpdateWaitViewController.m in Sources */,
+				6C5CF5761464A76E00B5AF86 /* CompanyInformationViewController.m in Sources */,
+				6C5CF6381464CA3200B5AF86 /* CreatePlanViewController.m in Sources */,
+				6C5CF6A61465BAA800B5AF86 /* QualifyingCompaniesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UID465_Prefix.pch;
+				INFOPLIST_FILE = "UID465-Info.plist";
+				PRODUCT_NAME = UID465;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UID465_Prefix.pch;
+				INFOPLIST_FILE = "UID465-Info.plist";
+				PRODUCT_NAME = UID465;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "UID465" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UID465" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

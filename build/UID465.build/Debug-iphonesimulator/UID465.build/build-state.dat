@@ -1,0 +1,584 @@
+TUID465
+v7
+r0
+t342214043.774538
+cCheck dependencies
+cProcessInfoPlistFile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/Info.plist UID465-Info.plist
+cCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/MainWindow.xib
+cCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/UID465ViewController.xib
+cCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.xib
+cCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.xib
+cCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.xib
+cCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.xib
+cCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.xib
+cCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.xib
+cProcessPCH /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch.gch UID465_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/main.o /Users/robertdeloatch/Documents/Apps/UID465/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465AppDelegate.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465ViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465ViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/ViewCompaniesViewContoller.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/Company.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/Company.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/WaitTimeViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UpdateWaitViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CompanyInformationViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CreatePlanViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/QualifyingCompaniesViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465 normal i386
+cGenerateDSYMFile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app.dSYM /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465
+cTouch /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
+c000000004B69B45C00000000000000EE
+t1265218652
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B2B4CC3000000000026EE30
+t1261128899
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B4DC8000000000027E880
+t1261129160
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B4DAE0000000000001355
+t1261129134
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B2B61620000000000000788
+t1261134178
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B2B62B500000000016721E0
+t1261134517
+s23536096
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/Company.h
+c000000004EB3361F00000000000003FC
+t1320367647
+s1020
+i<Foundation/Foundation.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/Company.m
+c000000004EB30DB50000000000000225
+t1320357301
+s549
+i"Company.h"
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.h
+c000000004EB4827000000000000001D2
+t1320452720
+s466
+i<UIKit/UIKit.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.m
+c000000004EB48BEF000000000000068C
+t1320455151
+s1676
+i"CompanyInformationViewController.h"
+i"Company.h"
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.xib
+c000000004EB48BCD0000000000009D9F
+t1320455117
+s40351
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.h
+c000000004EB587950000000000000314
+t1320519573
+s788
+i<UIKit/UIKit.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.m
+c000000004EB5891600000000000007EB
+t1320519958
+s2027
+i"CreatePlanViewController.h"
+i"QualifyingCompaniesViewController.h"
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.xib
+c000000004EB5878D0000000000008D12
+t1320519565
+s36114
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.h
+c000000004EB585EE0000000000000186
+t1320519150
+s390
+i<UIKit/UIKit.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.m
+c000000004EB58E150000000000000CEB
+t1320521237
+s3307
+i"QualifyingCompaniesViewController.h"
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.xib
+c000000004EB588BA00000000000064FB
+t1320519866
+s25851
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465AppDelegate.h
+c000000004EB2DA2E00000000000001CF
+t1320344110
+s463
+i<UIKit/UIKit.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465AppDelegate.m
+c000000004EB2DA2E0000000000000294
+t1320344110
+s660
+i"UID465AppDelegate.h"
+i"UID465ViewController.h"
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465ViewController.h
+c000000004EB496D200000000000003EE
+t1320457938
+s1006
+i<UIKit/UIKit.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465ViewController.m
+c000000004EB5890F0000000000000C80
+t1320519951
+s3200
+i"UID465ViewController.h"
+i"ViewCompaniesViewContoller.h"
+i"WaitTimeViewController.h"
+i"CreatePlanViewController.h"
+i"Company.h"
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.h
+c000000004EB3352C00000000000001A6
+t1320367404
+s422
+i<UIKit/UIKit.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.m
+c000000004EB335F0000000000000062F
+t1320367600
+s1583
+i"UpdateWaitViewController.h"
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.xib
+c000000004EB46F3E0000000000006CE5
+t1320447806
+s27877
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.h
+c000000004EB46F8A0000000000000175
+t1320447882
+s373
+i<UIKit/UIKit.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.m
+c000000004EB470E70000000000000CC3
+t1320448231
+s3267
+i"ViewCompaniesViewContoller.h"
+i"CompanyInformationViewController.h"
+i"Company.h"
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.xib
+c000000004EB587870000000000007B10
+t1320519559
+s31504
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.h
+c000000004EB46D500000000000000277
+t1320447312
+s631
+i<UIKit/UIKit.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.m
+c000000004EB46DAA0000000000000CD3
+t1320447402
+s3283
+i"WaitTimeViewController.h"
+i"Company.h"
+i"UpdateWaitViewController.h"
+
+N/Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.xib
+c000000004EB49061000000000000714F
+t1320456289
+s29007
+
+N/Users/robertdeloatch/Documents/Apps/UID465/MainWindow.xib
+c000000004EB2DA2E0000000000002641
+t1320344110
+s9793
+
+N/Users/robertdeloatch/Documents/Apps/UID465/UID465ViewController.xib
+c000000004EB496180000000000006977
+t1320457752
+s26999
+
+N/Users/robertdeloatch/Documents/Apps/UID465/UID465_Prefix.pch
+c000000004EB2DA2E00000000000000B5
+t1320344110
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app
+t1320521243
+s442
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app.dSYM
+t1320521243
+s102
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/CompanyInformationViewController.nib
+t1320455155
+s5893
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/CreatePlanViewController.nib
+t1320519576
+s5036
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/Info.plist
+t1320356920
+s589
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/MainWindow.nib
+t1320356921
+s1508
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/PkgInfo
+t1320356920
+s8
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/QualifyingCompaniesViewController.nib
+t1320519878
+s3004
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465
+t1320521243
+s54296
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465ViewController.nib
+t1320457769
+s2859
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UpdateWaitViewController.nib
+t1320448428
+s4037
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/ViewCompaniesViewContoller.nib
+t1320519576
+s3655
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/WaitTimeViewController.nib
+t1320456291
+s3278
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/Company.o
+t1320367653
+s15204
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CompanyInformationViewController.o
+t1320455155
+s35844
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CreatePlanViewController.o
+t1320519963
+s38796
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/QualifyingCompaniesViewController.o
+t1320521243
+s39684
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465.LinkFileList
+c000000004EB58677000000000000058B
+t1320519287
+s1419
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465AppDelegate.o
+t1320458002
+s38392
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465ViewController.o
+t1320519963
+s41320
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UpdateWaitViewController.o
+t1320367604
+s33044
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/ViewCompaniesViewContoller.o
+t1320452926
+s39964
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/WaitTimeViewController.o
+t1320447785
+s39908
+
+N/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/main.o
+t1320356923
+s5960
+
+N/Users/robertdeloatch/Documents/Apps/UID465/main.m
+c000000004EB2DA2E000000000000015E
+t1320344110
+s350
+i<UIKit/UIKit.h>
+
+N/var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch.gch
+t1320356922
+s13026768
+
+NUID465-Info.plist
+c000000004EB2DA2E000000000000038D
+t1320344110
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies342214043#342214043#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/Company.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/Company.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342060452.976178
+e342060453.097342
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/Company.o
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/Company.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/robertdeloatch/Documents/Apps/UID465/Classes/Company.m342060452#342060453#0(0"0(0#0#61"/Users/robertdeloatch/Documents/Apps/UID465/Classes/Company.m4300911832#1908"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/Classes/Company.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/Company.o0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CompanyInformationViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342147955.095071
+e342147955.152294
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CompanyInformationViewController.o
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.m342147955#342147955#0(0"0(0#0#86"/Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.m4300911832#1958"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CompanyInformationViewController.o0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CreatePlanViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342212763.465176
+e342212763.540167
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CreatePlanViewController.o
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.m342212763#342212763#0(0"0(0#0#78"/Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.m4300911832#1942"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/CreatePlanViewController.o0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/QualifyingCompaniesViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342214043.265027
+e342214043.559495
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/QualifyingCompaniesViewController.o
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@95"Compile /Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.m342214043#342214043#0(0"0(0#0#87"/Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.m4300911832#1960"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/QualifyingCompaniesViewController.o0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465AppDelegate.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342150801.939773
+e342150802.021587
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465AppDelegate.o
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465AppDelegate.m342150801#342150802#0(0"0(0#0#71"/Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465AppDelegate.m4300911832#1928"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465AppDelegate.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465AppDelegate.o0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465ViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465ViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342212763.417549
+e342212763.547262
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465ViewController.o
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465ViewController.m342212763#342212763#0(0"0(0#0#74"/Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465ViewController.m4300911832#1934"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/Classes/UID465ViewController.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465ViewController.o0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UpdateWaitViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342060403.958086
+e342060404.090984
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UpdateWaitViewController.o
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.m342060403#342060404#0(0"0(0#0#78"/Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.m4300911832#1942"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UpdateWaitViewController.o0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/ViewCompaniesViewContoller.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342145726.083403
+e342145726.198720
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/ViewCompaniesViewContoller.o
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.m342145726#342145726#0(0"0(0#0#80"/Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.m4300911832#1946"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/ViewCompaniesViewContoller.o0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/WaitTimeViewController.o /Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342140585.593569
+e342140585.656960
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/WaitTimeViewController.o
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.m342140585#342140585#0(0"0(0#0#76"/Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.m4300911832#1938"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/WaitTimeViewController.o0#
+
+CCompileC build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/main.o /Users/robertdeloatch/Documents/Apps/UID465/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s342049723.146633
+e342049723.212347
+r1
+xCompileC
+xbuild/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/main.o
+x/Users/robertdeloatch/Documents/Apps/UID465/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/robertdeloatch/Documents/Apps/UID465/main.m342049723#342049723#0(0"0(0#0#50"/Users/robertdeloatch/Documents/Apps/UID465/main.m4300911832#1894"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -include /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch -c /Users/robertdeloatch/Documents/Apps/UID465/main.m -o /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.xib
+s342147954.686328
+e342147955.094256
+r1
+xCompileXIB
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.xib
+lSLF07#2@55"CompileXIB Classes/CompanyInformationViewController.xib342147954#342147955#0(0"0(0#0#88"/Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.xib4300911832#548"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/CompanyInformationViewController.nib /Users/robertdeloatch/Documents/Apps/UID465/Classes/CompanyInformationViewController.xib0#
+
+CCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.xib
+s342212376.103397
+e342212377.037725
+r1
+xCompileXIB
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.xib
+lSLF07#2@47"CompileXIB Classes/CreatePlanViewController.xib342212376#342212377#0(0"0(0#0#80"/Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.xib4300911832#532"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/CreatePlanViewController.nib /Users/robertdeloatch/Documents/Apps/UID465/Classes/CreatePlanViewController.xib0#
+
+CCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.xib
+s342212678.502373
+e342212678.865396
+r1
+xCompileXIB
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.xib
+lSLF07#2@56"CompileXIB Classes/QualifyingCompaniesViewController.xib342212678#342212678#0(0"0(0#0#89"/Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.xib4300911832#550"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/QualifyingCompaniesViewController.nib /Users/robertdeloatch/Documents/Apps/UID465/Classes/QualifyingCompaniesViewController.xib0#
+
+CCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.xib
+s342141228.580160
+e342141229.003678
+r1
+xCompileXIB
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.xib
+lSLF07#2@47"CompileXIB Classes/UpdateWaitViewController.xib342141228#342141229#0(0"0(0#0#80"/Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.xib4300911832#532"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UpdateWaitViewController.nib /Users/robertdeloatch/Documents/Apps/UID465/Classes/UpdateWaitViewController.xib0#
+
+CCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.xib
+s342212376.102010
+e342212377.003863
+r1
+xCompileXIB
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.xib
+lSLF07#2@49"CompileXIB Classes/ViewCompaniesViewContoller.xib342212376#342212377#0(0"0(0#0#82"/Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.xib4300911832#536"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/ViewCompaniesViewContoller.nib /Users/robertdeloatch/Documents/Apps/UID465/Classes/ViewCompaniesViewContoller.xib0#
+
+CCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.xib
+s342149091.280782
+e342149091.586047
+r1
+xCompileXIB
+x/Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.xib
+lSLF07#2@45"CompileXIB Classes/WaitTimeViewController.xib342149091#342149091#0(0"0(0#0#78"/Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.xib4300911832#528"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/WaitTimeViewController.nib /Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.xib0#
+
+CCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/MainWindow.xib
+s342049720.766501
+e342049721.606424
+r1
+xCompileXIB
+x/Users/robertdeloatch/Documents/Apps/UID465/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib342049720#342049721#0(0"0(0#0#58"/Users/robertdeloatch/Documents/Apps/UID465/MainWindow.xib4300911832#496"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/MainWindow.nib /Users/robertdeloatch/Documents/Apps/UID465/MainWindow.xib0#
+
+CCompileXIB /Users/robertdeloatch/Documents/Apps/UID465/UID465ViewController.xib
+s342150569.084371
+e342150569.564919
+r1
+xCompileXIB
+x/Users/robertdeloatch/Documents/Apps/UID465/UID465ViewController.xib
+lSLF07#2@35"CompileXIB UID465ViewController.xib342150569#342150569#0(0"0(0#0#68"/Users/robertdeloatch/Documents/Apps/UID465/UID465ViewController.xib4300911832#516"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465ViewController.nib /Users/robertdeloatch/Documents/Apps/UID465/UID465ViewController.xib0#
+
+CGenerateDSYMFile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app.dSYM /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465
+s342214043.665981
+e342214043.765405
+r1
+xGenerateDSYMFile
+x/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app.dSYM
+x/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465
+lSLF07#2@106"GenerateDSYMFile build/Debug-iphonesimulator/UID465.app.dSYM build/Debug-iphonesimulator/UID465.app/UID465342214043#342214043#0(0"0(0#0#89"/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID4654300911832#395"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465 -o /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app.dSYM0#
+
+CLd /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465 normal i386
+s342214043.559590
+e342214043.665877
+r1
+xLd
+x/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465
+xnormal
+xi386
+lSLF07#2@94"Link /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID465342214043#342214043#0(0"0(0#0#0"4300911832#884"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -filelist /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/Objects-normal/i386/UID465.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/UID4650#
+
+CProcessInfoPlistFile /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/Info.plist UID465-Info.plist
+s342049720.761725
+e342049720.766373
+r1
+xProcessInfoPlistFile
+x/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/Info.plist
+xUID465-Info.plist
+lSLF07#2@25"Process UID465-Info.plist342049720#342049720#0(0"0(0#0#61"/Users/robertdeloatch/Documents/Apps/UID465/UID465-Info.plist4300911832#491"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility UID465-Info.plist -genpkginfo /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app/Info.plist0#
+
+CProcessPCH /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch.gch UID465_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s342049721.647917
+e342049723.146390
+r1
+xProcessPCH
+x/var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch.gch
+xUID465_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile UID465_Prefix.pch342049721#342049723#0(0"0(0#0#61"/Users/robertdeloatch/Documents/Apps/UID465/UID465_Prefix.pch4300911832#1782"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-generated-files.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-own-target-headers.hmap -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-all-target-headers.hmap -iquote /Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/UID465-project-headers.hmap -F/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator -I/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/include -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources/i386 -I/Users/robertdeloatch/Documents/Apps/UID465/build/UID465.build/Debug-iphonesimulator/UID465.build/DerivedSources -c /Users/robertdeloatch/Documents/Apps/UID465/UID465_Prefix.pch -o /var/folders/6y/6yiND5BJED85Uel1cHFfrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UID465_Prefix-aopkufgivffrtlbcfzcbacskliav/UID465_Prefix.pch.gch0#
+
+CTouch /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app
+s342214043.765496
+e342214043.774463
+r1
+xTouch
+x/Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app
+lSLF07#2@88"Touch /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app342214043#342214043#0(0"0(0#0#0"4300911832#287"    cd /Users/robertdeloatch/Documents/Apps/UID465    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/robertdeloatch/Documents/Apps/UID465/build/Debug-iphonesimulator/UID465.app0#
+

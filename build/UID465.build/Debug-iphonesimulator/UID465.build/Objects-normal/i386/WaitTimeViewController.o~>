@@ -1,0 +1,2 @@
+/Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.m:109: warning: property 'updateWaitViewController' requires method '-updateWaitViewController' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/robertdeloatch/Documents/Apps/UID465/Classes/WaitTimeViewController.m:109: warning: property 'updateWaitViewController' requires the method 'setUpdateWaitViewController:' to be defined - use @synthesize, @dynamic or provide a method implementation
