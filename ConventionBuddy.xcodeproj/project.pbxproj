@@ -13,6 +13,12 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		6C5CF2561462292C00B5AF86 /* CompanyInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF2541462292C00B5AF86 /* CompanyInformation.m */; };
+		6C5CF2571462292C00B5AF86 /* CompanyInformation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CF2551462292C00B5AF86 /* CompanyInformation.xib */; };
+		6C5CF26314622E8100B5AF86 /* UpdateCompanyList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF26114622E8100B5AF86 /* UpdateCompanyList.m */; };
+		6C5CF26414622E8100B5AF86 /* UpdateCompanyList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CF26214622E8100B5AF86 /* UpdateCompanyList.xib */; };
+		6C5CF26914622F2900B5AF86 /* UpdateWaitTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CF26714622F2900B5AF86 /* UpdateWaitTime.m */; };
+		6C5CF26A14622F2900B5AF86 /* UpdateWaitTime.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CF26814622F2900B5AF86 /* UpdateWaitTime.xib */; };
 		6C90BAC91440D390004DFBE1 /* ViewCompanies.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C90BAC71440D390004DFBE1 /* ViewCompanies.m */; };
 		6C90BACA1440D390004DFBE1 /* ViewCompanies.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C90BAC81440D390004DFBE1 /* ViewCompanies.xib */; };
 /* End PBXBuildFile section */
@@ -27,6 +33,15 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ConventionBuddy_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConventionBuddy_Prefix.pch; sourceTree = "<group>"; };
+		6C5CF2531462292C00B5AF86 /* CompanyInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyInformation.h; sourceTree = "<group>"; };
+		6C5CF2541462292C00B5AF86 /* CompanyInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyInformation.m; sourceTree = "<group>"; };
+		6C5CF2551462292C00B5AF86 /* CompanyInformation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyInformation.xib; sourceTree = "<group>"; };
+		6C5CF26014622E8100B5AF86 /* UpdateCompanyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateCompanyList.h; sourceTree = "<group>"; };
+		6C5CF26114622E8100B5AF86 /* UpdateCompanyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateCompanyList.m; sourceTree = "<group>"; };
+		6C5CF26214622E8100B5AF86 /* UpdateCompanyList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateCompanyList.xib; sourceTree = "<group>"; };
+		6C5CF26614622F2900B5AF86 /* UpdateWaitTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateWaitTime.h; sourceTree = "<group>"; };
+		6C5CF26714622F2900B5AF86 /* UpdateWaitTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateWaitTime.m; sourceTree = "<group>"; };
+		6C5CF26814622F2900B5AF86 /* UpdateWaitTime.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateWaitTime.xib; sourceTree = "<group>"; };
 		6C90BAC61440D390004DFBE1 /* ViewCompanies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCompanies.h; sourceTree = "<group>"; };
 		6C90BAC71440D390004DFBE1 /* ViewCompanies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCompanies.m; sourceTree = "<group>"; };
 		6C90BAC81440D390004DFBE1 /* ViewCompanies.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewCompanies.xib; sourceTree = "<group>"; };
@@ -55,6 +70,15 @@
 				6C90BAC61440D390004DFBE1 /* ViewCompanies.h */,
 				6C90BAC71440D390004DFBE1 /* ViewCompanies.m */,
 				6C90BAC81440D390004DFBE1 /* ViewCompanies.xib */,
+				6C5CF2531462292C00B5AF86 /* CompanyInformation.h */,
+				6C5CF2541462292C00B5AF86 /* CompanyInformation.m */,
+				6C5CF2551462292C00B5AF86 /* CompanyInformation.xib */,
+				6C5CF26014622E8100B5AF86 /* UpdateCompanyList.h */,
+				6C5CF26114622E8100B5AF86 /* UpdateCompanyList.m */,
+				6C5CF26214622E8100B5AF86 /* UpdateCompanyList.xib */,
+				6C5CF26614622F2900B5AF86 /* UpdateWaitTime.h */,
+				6C5CF26714622F2900B5AF86 /* UpdateWaitTime.m */,
+				6C5CF26814622F2900B5AF86 /* UpdateWaitTime.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -151,6 +175,9 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				6C90BACA1440D390004DFBE1 /* ViewCompanies.xib in Resources */,
+				6C5CF2571462292C00B5AF86 /* CompanyInformation.xib in Resources */,
+				6C5CF26414622E8100B5AF86 /* UpdateCompanyList.xib in Resources */,
+				6C5CF26A14622F2900B5AF86 /* UpdateWaitTime.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +191,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* ConventionBuddyAppDelegate.m in Sources */,
 				6C90BAC91440D390004DFBE1 /* ViewCompanies.m in Sources */,
+				6C5CF2561462292C00B5AF86 /* CompanyInformation.m in Sources */,
+				6C5CF26314622E8100B5AF86 /* UpdateCompanyList.m in Sources */,
+				6C5CF26914622F2900B5AF86 /* UpdateWaitTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

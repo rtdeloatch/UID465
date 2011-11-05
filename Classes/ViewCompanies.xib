@@ -48,19 +48,13 @@
 						<string key="NSFrameSize">{320, 44}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSMutableArray" key="IBUIItems">
+						<object class="NSArray" key="IBUIItems">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="963306997">
 								<reference key="IBUINavigationBar" ref="652567534"/>
-								<string key="IBUITitle">Title</string>
+								<string key="IBUITitle">Companies</string>
 								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="562588590">
-									<string key="IBUITitle">Back</string>
-									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-									<int key="IBUIStyle">1</int>
-									<reference key="IBUINavigationItem" ref="963306997"/>
-								</object>
-								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="1027738970">
-									<string key="IBUITitle">Map</string>
+									<string key="IBUITitle">MAP</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
 									<reference key="IBUINavigationItem" ref="963306997"/>
@@ -193,9 +187,9 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="652567534"/>
 							<reference ref="794813819"/>
 							<reference ref="762990458"/>
+							<reference ref="652567534"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -240,18 +234,12 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="562588590"/>
-							<reference ref="1027738970"/>
 						</object>
 						<reference key="parent" ref="652567534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">20</int>
 						<reference key="object" ref="562588590"/>
-						<reference key="parent" ref="963306997"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">21</int>
-						<reference key="object" ref="1027738970"/>
 						<reference key="parent" ref="963306997"/>
 					</object>
 				</object>
@@ -267,7 +255,6 @@
 					<string>17.IBPluginDependency</string>
 					<string>19.IBPluginDependency</string>
 					<string>20.IBPluginDependency</string>
-					<string>21.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 				</object>
@@ -275,8 +262,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>ViewCompanies</string>
 					<string>UIResponder</string>
-					<string>{{520, 215}, {320, 480}}</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>{{601, 131}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
