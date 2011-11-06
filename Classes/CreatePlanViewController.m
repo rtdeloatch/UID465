@@ -19,7 +19,7 @@
 -(IBAction)generateQualifyList{
 	QualifyingCompaniesViewController * qualifyView = [[QualifyingCompaniesViewController alloc] initWithNibName:nil
 																							  bundle:nil];
-	qualifyView.companyList = self.companyList;
+	qualifyView.myCompanies = [NSMutableArray arrayWithArray:self.companyList];
 	[self presentModalViewController:qualifyView animated:YES];
 }
 

@@ -11,9 +11,11 @@
 
 @interface QualifyingCompaniesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
 	NSArray * companyList;
+	NSMutableArray * myCompanies;
 }
 
 @property (nonatomic, retain) NSArray * companyList;
+@property (nonatomic, retain) NSMutableArray * myCompanies;
 
 -(IBAction)back;
 

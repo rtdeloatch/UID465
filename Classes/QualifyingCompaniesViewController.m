@@ -7,10 +7,10 @@
 //
 
 #import "QualifyingCompaniesViewController.h"
-
+#import "Company.h"
 
 @implementation QualifyingCompaniesViewController
-@synthesize companyList;
+@synthesize companyList, myCompanies;
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
@@ -30,7 +30,6 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self setEditing:YES animated:NO];
 }
 
 
@@ -44,7 +43,7 @@
 
 //Specifies the number of rows in a given section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-	return [self.companyList count];
+	return [self.myCompanies count];
 }
 
 //Number of sections in table
@@ -63,19 +62,28 @@
 									   reuseIdentifier:CellIdentifier] autorelease];
 	}
     
-	[cell setShowsReorderControl:YES];
+	[tableView setEditing:YES animated:NO];
 	
 	// Configure the cell.
-	cell.textLabel.text = [[self.companyList objectAtIndex:indexPath.row] name];
+	cell.textLabel.text = [[self.myCompanies objectAtIndex:indexPath.row] name];
+	[cell setShowsReorderControl:YES];
 	return cell;
 }
+
 
 //Support rearranging the table view
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath 
 	  toIndexPath:(NSIndexPath *)toIndexPath{
-	
+	Company * company = [[self.myCompanies objectAtIndex:fromIndexPath.row] retain];
+	[self.myCompanies removeObjectAtIndex:fromIndexPath.row];
+	[self.myCompanies insertObject:company atIndex:toIndexPath.row];
+	[company release];
 }
 
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+	return YES;
+}
+		 
 /*
 // Override to support row selection in the table view.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
