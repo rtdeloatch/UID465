@@ -297,7 +297,7 @@
 							<real>263</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1526 166 1024 713 1440 30 1152 870 </string>
+						<string>280 142 1024 713 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -327,7 +327,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6C5CF7AF1466045300B5AF86</string>
+										<string>6C5CF7B114664E7E00B5AF86</string>
 										<key>history</key>
 										<array>
 											<string>6C5CF6441464CD7D00B5AF86</string>
@@ -363,7 +363,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {739, 482}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1526 166 1024 713 1440 30 1152 870 </string>
+								<string>280 142 1024 713 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -383,7 +383,7 @@
 								<key>Frame</key>
 								<string>{{0, 487}, {739, 185}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1526 166 1024 713 1440 30 1152 870 </string>
+								<string>280 142 1024 713 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -547,13 +547,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>6C5CF368146311B900B5AF86</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/robertdeloatch/UID465/UID465.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1526 166 1024 713 1440 30 1152 870 </string>
+	<string>280 142 1024 713 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -932,7 +932,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
