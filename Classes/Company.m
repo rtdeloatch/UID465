@@ -11,13 +11,21 @@
 
 @implementation Company
 
-@synthesize name, location, about, majors, wantsFreshman, wantsSophomore;
-@synthesize wantsJunior, wantsSenior, wantsGrad, gpa, wantsCitizen, waitStatus;
+@synthesize name, location, about, majors, years, gpa, citizenship, wait_time, distance, ranking;
 
-+(id) companyWithName: (NSString *) newName location: (NSString *) newLocation{
++(id) companyWithName: (NSString *) newName location: (NSString *) newLocation about: (NSString *) newAbout majors: (NSString *) newMajors years: (NSString *) newYears gpa: (double) newGPA citizenship: (NSString *) newCitizenship wait_time: (int) newWait_Time distance: (double) newDistance ranking: (int) newRanking
+{
 	Company * company = [[[Company alloc] init] autorelease];
 	company.name = newName;
 	company.location = newLocation;
+    company.about = newAbout;
+    company.majors = newMajors;
+    company.years = newYears;
+    company.gpa = newGPA;
+    company.citizenship = newCitizenship;
+    company.wait_time = newWait_Time;
+    company.distance = newDistance;
+    company.ranking = newRanking;
 	return company;
 }
 

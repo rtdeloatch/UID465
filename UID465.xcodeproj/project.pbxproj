@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047F431A1467726400750AA9 /* DDFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F43191467726400750AA9 /* DDFileReader.m */; };
+		047F431D146787EC00750AA9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F431C146787EC00750AA9 /* Person.m */; };
 		1D3623260D0F684500981E51 /* UID465AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* UID465AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -31,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047F43181467726400750AA9 /* DDFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileReader.h; sourceTree = "<group>"; };
+		047F43191467726400750AA9 /* DDFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileReader.m; sourceTree = "<group>"; };
+		047F431B146787EC00750AA9 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
+		047F431C146787EC00750AA9 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* UID465AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UID465AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* UID465AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UID465AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 				28D7ACF70DDB3853001CB0EB /* UID465ViewController.m */,
 				6C5CF3F81463239600B5AF86 /* Company.h */,
 				6C5CF3F91463239600B5AF86 /* Company.m */,
+				047F431B146787EC00750AA9 /* Person.h */,
+				047F431C146787EC00750AA9 /* Person.m */,
 				6C5CF41514632D7C00B5AF86 /* WaitTimeViewController.h */,
 				6C5CF41614632D7C00B5AF86 /* WaitTimeViewController.m */,
 				6C5CF4AF1463677100B5AF86 /* UpdateWaitViewController.h */,
@@ -101,6 +109,8 @@
 				6C5CF6361464CA3200B5AF86 /* CreatePlanViewController.m */,
 				6C5CF6A31465BAA800B5AF86 /* QualifyingCompaniesViewController.h */,
 				6C5CF6A41465BAA800B5AF86 /* QualifyingCompaniesViewController.m */,
+				047F43181467726400750AA9 /* DDFileReader.h */,
+				047F43191467726400750AA9 /* DDFileReader.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -234,6 +244,8 @@
 				6C5CF5761464A76E00B5AF86 /* CompanyInformationViewController.m in Sources */,
 				6C5CF6381464CA3200B5AF86 /* CreatePlanViewController.m in Sources */,
 				6C5CF6A61465BAA800B5AF86 /* QualifyingCompaniesViewController.m in Sources */,
+				047F431A1467726400750AA9 /* DDFileReader.m in Sources */,
+				047F431D146787EC00750AA9 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

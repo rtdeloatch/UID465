@@ -12,7 +12,8 @@
 @class WaitTimeViewController;
 @class Company;
 @class CreatePlanViewController;
-@interface UID465ViewController : UIViewController {
+@interface UID465ViewController : UIViewController
+{
 	ViewCompaniesViewContoller* viewCompaniesViewController;
 	WaitTimeViewController* waitTimeViewController;
 	CreatePlanViewController* createPlanViewController;
@@ -29,6 +30,6 @@
 -(IBAction)viewWaitTime;
 -(IBAction)createPlan;
 -(IBAction)updatePosition;
-
+- (NSArray *)assembleCompanies;
 @end
 
