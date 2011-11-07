@@ -12,6 +12,7 @@
 @class WaitTimeViewController;
 @class Company;
 @class CreatePlanViewController;
+
 @interface UID465ViewController : UIViewController <UIScrollViewDelegate> {
 	UIScrollView * map;
 	ViewCompaniesViewContoller* viewCompaniesViewController;
@@ -33,6 +34,6 @@
 -(IBAction)viewWaitTime;
 -(IBAction)createPlan;
 -(IBAction)updatePosition;
-
+- (NSArray *)assembleCompanies;
 @end
 

@@ -10,7 +10,7 @@
 #import "Company.h"
 
 @implementation CompanyInformationViewController
-@synthesize company, scrollView, name;
+@synthesize company, scrollView, name, majors, about;
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
@@ -32,6 +32,10 @@
     [super viewDidLoad];
 	[scrollView setScrollEnabled:YES];
 	[scrollView setContentSize:CGSizeMake(320, 875)];
+	
+	name.text = self.company.name;
+	majors.text = self.company.majors;
+	about.text = self.company.about;
 }
 
 

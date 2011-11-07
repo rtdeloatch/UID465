@@ -6,11 +6,14 @@
 //  Copyright UMBC 2011. All rights reserved.
 //
 
+#include <stdio.h>
+
 #import "UID465ViewController.h"
 #import "ViewCompaniesViewContoller.h"
 #import "WaitTimeViewController.h"
 #import "CreatePlanViewController.h"
 #import "Company.h"
+#import "DDFileReader.h"
 
 
 @implementation UID465ViewController
@@ -67,6 +70,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /**
 	
 	self.companyList = [NSArray arrayWithObjects:[Company companyWithName:@"Apple" location:@"A7"],
 						[Company companyWithName:@"Microsoft" location:@"B5"],
@@ -80,6 +85,10 @@
 						[Company companyWithName:@"MSN" location:@"B2"],
 						[Company companyWithName:@"Cisco" location:@"B2"],
 						nil];
+     
+     **/
+    
+    self.companyList = [self assembleCompanies];
 	
 
 /*	
@@ -124,6 +133,95 @@
 	map.minimumZoomScale = 0.45;
 	map.clipsToBounds = YES;
 	map.delegate = self;
+}
+
+
+- (NSArray *)assembleCompanies
+{
+        
+    NSMutableArray * companyInfo = [[NSMutableArray alloc] init];
+
+    NSString * new_name;
+	NSString * new_location;
+	NSString * new_about;
+	NSString * new_majors;
+    NSString * new_years;
+	double new_gpa;
+	NSString * new_citizenship;
+    int new_wait_time;
+    double new_distance;
+    int new_ranking;
+    
+    int count = 0;
+    int line_num = 1;
+    
+    DDFileReader * reader = [[DDFileReader alloc] initWithFilePath:@"/Users/robertdeloatch/UID465/company_info.txt"];
+    NSString * line = nil;
+    while ((line = [reader readLine]))
+    {
+        //NSLog(@"read line: %@", line);
+        
+        if (count % 2)
+        {
+            if(line_num == 1)
+            {
+                new_name = line;
+            }
+            if(line_num == 2)
+            {
+                new_location = line;
+            }
+            if(line_num == 3)
+            {
+                new_about = line;
+            }
+            if(line_num == 4)
+            {
+                new_majors = line;
+            }
+            if(line_num == 5)
+            {
+                new_years = line;
+            }
+            if(line_num == 6)
+            {
+                new_gpa = [line doubleValue];
+            }
+            if(line_num == 7)
+            {
+                new_citizenship = line;
+            }
+            if(line_num == 8)
+            {
+                new_wait_time = [line intValue];
+            }
+            if(line_num == 9)
+            {
+                new_distance = [line doubleValue];
+            }
+            if(line_num == 10)
+            {
+                new_ranking = [line intValue];
+                line_num = 0;
+                
+                Company * new_company = [Company companyWithName: new_name location: new_location about: new_about majors: new_majors years: new_years gpa: new_gpa citizenship: new_citizenship wait_time: new_wait_time distance: new_distance ranking: new_ranking];
+                
+                [companyInfo addObject:new_company];
+                
+            }
+            
+            line_num++;
+            
+        }
+        
+        count++;
+    }
+    [reader release];
+    
+    NSArray * temp_array = [[NSArray alloc] initWithArray:companyInfo];
+    
+    return temp_array;
+    
 }
 
 

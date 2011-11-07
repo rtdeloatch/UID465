@@ -14,29 +14,26 @@
 	NSString * location;
 	NSString * about;
 	NSString * majors;
-	BOOL wantsFreshman;
-	BOOL wantsSophomore;
-	BOOL wantsJunior;
-	BOOL wantsSenior;
-	BOOL wantsGrad;
+    NSString * years;
 	double gpa;
-	BOOL wantsCitizen;
-	int waitStatus;
+	NSString * citizenship;
+    int wait_time;
+    double distance;
+    int ranking;
 }
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * location;
 @property (nonatomic, retain) NSString * about;
 @property (nonatomic, retain) NSString * majors;
-@property (nonatomic) BOOL wantsFreshman;
-@property (nonatomic) BOOL wantsSophomore;
-@property (nonatomic) BOOL wantsJunior;
-@property (nonatomic) BOOL wantsSenior;
-@property (nonatomic) BOOL wantsGrad;
+@property (nonatomic, retain) NSString * years;
 @property (nonatomic) double gpa;
-@property (nonatomic) BOOL wantsCitizen;
-@property (nonatomic) int waitStatus;
+@property (nonatomic, retain) NSString * citizenship;
+@property (nonatomic) int wait_time;
+@property (nonatomic) double distance;
+@property (nonatomic) int ranking;
 
-+(id) companyWithName: (NSString *) newName location: (NSString *) newLocation;
+
++(id) companyWithName: (NSString *) newName location: (NSString *) newLocation about: (NSString *) newAbout majors: (NSString *) newMajors years: (NSString *) newYears gpa: (double) newGPA citizenship: (NSString *) newCitizenship wait_time: (int) newWait_Time distance: (double) newDistance ranking: (int) newRanking;
 
 @end

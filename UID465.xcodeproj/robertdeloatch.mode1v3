@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>6CEB7C301467823300C4B002</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>UID465AppDelegate.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>6CEB7C311467823300C4B002</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>UID465AppDelegate.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>6CEB7C851467912200C4B002</string>
-						<key>history</key>
-						<array>
-							<string>6CEB7BFB1467605C00C4B002</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {836, 688}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>103 123 836 729 0 0 1440 878 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -368,7 +327,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6CEB7C841467912200C4B002</string>
+										<string>6CEB7C881467928F00C4B002</string>
 										<key>history</key>
 										<array>
 											<string>6C5CF6441464CD7D00B5AF86</string>
@@ -588,10 +547,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>6CEB7C301467823300C4B002</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>6C5CF368146311B900B5AF86</string>
-		<string>6CEB7C301467823300C4B002</string>
 		<string>/Users/robertdeloatch/UID465/UID465.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
