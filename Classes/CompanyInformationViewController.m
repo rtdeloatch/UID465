@@ -10,7 +10,7 @@
 #import "Company.h"
 
 @implementation CompanyInformationViewController
-@synthesize company, scrollView;
+@synthesize company, scrollView, name;
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];

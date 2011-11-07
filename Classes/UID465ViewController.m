@@ -16,8 +16,12 @@
 @implementation UID465ViewController
 
 @synthesize viewCompaniesViewController, waitTimeViewController, myCompanies, companyList;
-@synthesize createPlanViewController;
+@synthesize createPlanViewController, map, mainView;
 
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
+	return mainView;
+}
 
 -(IBAction)viewCompanies{
 	ViewCompaniesViewContoller * companiesView = [[ViewCompaniesViewContoller alloc] initWithNibName:nil
@@ -77,6 +81,49 @@
 						[Company companyWithName:@"Cisco" location:@"B2"],
 						nil];
 	
+
+/*	
+	UIImageView *temp = [[UIImageView alloc] initWithImage:[UIImage imageWithData:
+															[NSData dataWithContentsOfURL:
+															 [NSURL URLWithString:@"http://www.lonelyplanet.com/maps/pacific/papua-new-guinea/map_of_papua-new-guinea.jpg"]]]];
+	[self setImage:temp];
+*/	
+//	map.contentSize = CGSizeMake(temp.frame.size.width, temp.frame.size.height);
+	
+	map.contentSize = CGSizeMake(700, 700);
+	CGRect myFrame = CGRectMake(0, 0, 700, 700);
+	UIView * backgroundView = [[UIView alloc] initWithFrame:myFrame];
+	backgroundView.backgroundColor = [UIColor grayColor];
+	
+	//mainView = backgroundView;
+	
+	int x = 100;
+	int y = 50;
+	
+	for (int row = 0; row < 2; row++) {
+		for (int i = 0; i < 5; i++) {
+			myFrame = CGRectMake((i*x) + x, y, 100, 50);
+			UIView * booth1 = [[UIView alloc] initWithFrame:myFrame];
+			if (i % 2 == 0) {
+				booth1.backgroundColor = [UIColor yellowColor];				
+			}else{
+				booth1.backgroundColor = [UIColor orangeColor];	
+			}
+			[backgroundView addSubview:booth1];
+			[booth1 release];
+		}
+		y = y *2;
+	}
+
+	
+	mainView = backgroundView;
+	
+	[map addSubview:backgroundView];
+	[backgroundView release];
+	map.maximumZoomScale = 3.0;
+	map.minimumZoomScale = 0.45;
+	map.clipsToBounds = YES;
+	map.delegate = self;
 }
 
 

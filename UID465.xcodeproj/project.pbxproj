@@ -137,8 +137,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6C5CF6A51465BAA800B5AF86 /* QualifyingCompaniesViewController.xib */,
 				6C5CF6371464CA3200B5AF86 /* CreatePlanViewController.xib */,
+				6C5CF6A51465BAA800B5AF86 /* QualifyingCompaniesViewController.xib */,
 				6C5CF5751464A76E00B5AF86 /* CompanyInformationViewController.xib */,
 				6C5CF4B11463677100B5AF86 /* UpdateWaitViewController.xib */,
 				6C5CF41714632D7C00B5AF86 /* WaitTimeViewController.xib */,

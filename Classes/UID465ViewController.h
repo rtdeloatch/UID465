@@ -12,12 +12,14 @@
 @class WaitTimeViewController;
 @class Company;
 @class CreatePlanViewController;
-@interface UID465ViewController : UIViewController {
+@interface UID465ViewController : UIViewController <UIScrollViewDelegate> {
+	UIScrollView * map;
 	ViewCompaniesViewContoller* viewCompaniesViewController;
 	WaitTimeViewController* waitTimeViewController;
 	CreatePlanViewController* createPlanViewController;
 	NSMutableArray * myCompanies;
 	NSArray * companyList;
+	UIView * mainView;
 }
 
 @property(nonatomic,retain) ViewCompaniesViewContoller* viewCompaniesViewController;
@@ -25,6 +27,8 @@
 @property(nonatomic,retain) CreatePlanViewController* createPlanViewController;
 @property(nonatomic,retain) NSMutableArray * myCompanies;
 @property(nonatomic,retain) NSArray * companyList;
+@property(nonatomic,retain) UIView * mainView;
+@property(nonatomic,retain) IBOutlet UIScrollView * map;
 -(IBAction)viewCompanies;
 -(IBAction)viewWaitTime;
 -(IBAction)createPlan;

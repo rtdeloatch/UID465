@@ -11,11 +11,17 @@
 @class Company;
 @interface CompanyInformationViewController : UIViewController <UIScrollViewDelegate>{
 	Company * company;
-	IBOutlet UIScrollView * scrollView;
+	UIScrollView * scrollView;
+	UITextView * majors;
+	UITextView * about;
+	UILabel * name;
 }
 
 @property (nonatomic, retain) Company * company;
-@property (nonatomic, retain) UIScrollView * scrollView;
+@property (nonatomic, retain) IBOutlet UILabel * name;
+@property (nonatomic, retain) IBOutlet UITextView * majors;
+@property (nonatomic, retain) IBOutlet UITextView * about;
+@property (nonatomic, retain) IBOutlet UIScrollView * scrollView;
 -(IBAction)back;
 
 @end
