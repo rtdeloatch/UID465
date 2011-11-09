@@ -19,7 +19,7 @@
 @implementation UID465ViewController
 
 @synthesize viewCompaniesViewController, waitTimeViewController, myCompanies, companyList;
-@synthesize createPlanViewController, map, mainView;
+@synthesize createPlanViewController, map, mainView, bottomBar, leftButton, rightButton;
 
 
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
@@ -42,11 +42,13 @@
 -(IBAction)createPlan{
 	CreatePlanViewController * createPlanView = [[CreatePlanViewController alloc] initWithNibName:nil bundle:nil];
 	createPlanView.companyList = self.companyList;
+	createPlanView.myCompanies = self.myCompanies;
+	createPlanView.mainView = self;
 	[self presentModalViewController:createPlanView animated:YES];
 }
 
 -(IBAction)updatePosition{
-	
+   
 }
 
 /*
@@ -59,20 +61,120 @@
 }
 */
 
+
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
-}
-*/
+	[super viewDidLoad];
+	CGRect frame = CGRectMake(0, 0, 320, 480);
+	self.view = [[UIView alloc] initWithFrame:frame];
+	self.view.backgroundColor = [UIColor darkGrayColor];
+	
+	self.bottomBar = [[UIToolbar alloc] init];
+	[self.bottomBar sizeToFit];
+}*/
 
+-(void)updateBottomBar:(BOOL)checked{
+	NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:bottomBar.items] retain];
+	UIBarButtonItem *barButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Apple"
+																	   style:UIBarButtonItemStylePlain 
+																	  target:self 
+																	  action:@selector(createPlan:)] autorelease];
+	[toolbarItems replaceObjectAtIndex:0 withObject:barButtonItem];
+	
+	bottomBar.items = toolbarItems;
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+	[super viewDidAppear:animated];
+	[self draw];
+
+//	[self updateBottomBar:YES];
+	
+	//if mycompanies is notempty
+//	[self.leftButton se
+//	[self.rightButton setTitle:@""];
+	
+	
+//	for (int i = 0; i < [self.myCompanies count]; i++) {
+//		NSLog(@"Names in mycompane: %@", [[self.myCompanies objectAtIndex:i] name]);
+//	}
+//	NSLog(@"Uh oh");
+}
+
+
+-(void)draw{
+	map.contentSize = CGSizeMake(700, 900);
+	CGRect myFrame = CGRectMake(0, 0, 700, 900);
+	UIView * backgroundView = [[UIView alloc] initWithFrame:myFrame];
+	backgroundView.backgroundColor = [UIColor grayColor];
+	
+	int x = 100;
+	int y = 50;
+	int index = 0;
+	
+	for (int sections = 0; sections < 4; sections++) {
+		for (int row = 0; row < 2; row++) {
+			for (int i = 0; i < 5; i++) {
+				myFrame = CGRectMake((i*x) + x, y, 100, 50);
+				UIView * booth1 = [[UIView alloc] initWithFrame:myFrame];
+				CGRect frameLabel = CGRectMake(10, 10, 90, 50);
+				UILabel * nameLab = [[UILabel alloc] initWithFrame:frameLabel];
+				nameLab.backgroundColor = [UIColor clearColor];
+				nameLab.text = [[self.companyList objectAtIndex:index] name];
+				
+
+				myFrame = CGRectMake(20, 0, 38, 38);
+				//Works
+				UIImage * img = [[UIImage alloc] initWithContentsOfFile:@"/Users/robertdeloatch/UID465/gps.png"];
+				UIImageView * dot = [[UIImageView alloc] initWithFrame:myFrame];
+				[dot setImage:img];
+				
+				for(Company * c in self.myCompanies){
+					if ([[c name] isEqualToString:nameLab.text]) {
+						[nameLab addSubview:dot];
+					}
+				}
+				
+				//[nameLab addSubview:dot];
+				
+				
+				[booth1 addSubview:nameLab]; //adds comapny name to the box
+				booth1.backgroundColor = [self getBackgroundColor:[self.companyList objectAtIndex:index]];
+				/*
+				 if (i % 2 == 0) {
+				 booth1.backgroundColor = [UIColor yellowColor];				
+				 }else{
+				 booth1.backgroundColor = [UIColor orangeColor];	
+				 }*/
+				[backgroundView addSubview:booth1];
+				[booth1 release];
+				index++;
+			}
+			y = y + 50;
+		}
+		y = y + 50;
+	}
+	
+	
+	
+	mainView = backgroundView;
+	
+	[map addSubview:backgroundView];
+	[backgroundView release];
+	map.maximumZoomScale = 2.2;
+	map.minimumZoomScale = 0.45;
+	map.clipsToBounds = YES;
+	map.delegate = self;
+}
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    /**
-	
+    
+/**	
 	self.companyList = [NSArray arrayWithObjects:[Company companyWithName:@"Apple" location:@"A7"],
 						[Company companyWithName:@"Microsoft" location:@"B5"],
 						[Company companyWithName:@"Sun Microsystems" location:@"J7"],
@@ -85,10 +187,12 @@
 						[Company companyWithName:@"MSN" location:@"B2"],
 						[Company companyWithName:@"Cisco" location:@"B2"],
 						nil];
+ **/    
      
-     **/
     
     self.companyList = [self assembleCompanies];
+	self.myCompanies = [[NSMutableArray alloc] init];
+	NSLog(@"%d", [self.companyList count]);
 	
 
 /*	
@@ -98,9 +202,9 @@
 	[self setImage:temp];
 */	
 //	map.contentSize = CGSizeMake(temp.frame.size.width, temp.frame.size.height);
-	
-	map.contentSize = CGSizeMake(700, 700);
-	CGRect myFrame = CGRectMake(0, 0, 700, 700);
+/*	
+	map.contentSize = CGSizeMake(700, 900);
+	CGRect myFrame = CGRectMake(0, 0, 700, 900);
 	UIView * backgroundView = [[UIView alloc] initWithFrame:myFrame];
 	backgroundView.backgroundColor = [UIColor grayColor];
 	
@@ -108,31 +212,58 @@
 	
 	int x = 100;
 	int y = 50;
+	int index = 0;
 	
-	for (int row = 0; row < 2; row++) {
-		for (int i = 0; i < 5; i++) {
-			myFrame = CGRectMake((i*x) + x, y, 100, 50);
-			UIView * booth1 = [[UIView alloc] initWithFrame:myFrame];
-			if (i % 2 == 0) {
-				booth1.backgroundColor = [UIColor yellowColor];				
-			}else{
-				booth1.backgroundColor = [UIColor orangeColor];	
+	for (int sections = 0; sections < 4; sections++) {
+		for (int row = 0; row < 2; row++) {
+			for (int i = 0; i < 5; i++) {
+				myFrame = CGRectMake((i*x) + x, y, 100, 50);
+				UIView * booth1 = [[UIView alloc] initWithFrame:myFrame];
+				CGRect frameLabel = CGRectMake(10, 10, 70, 30);
+				UILabel * nameLab = [[UILabel alloc] initWithFrame:frameLabel];
+				nameLab.backgroundColor = [UIColor clearColor];
+				nameLab.text = [[self.companyList objectAtIndex:index] name];
+				[booth1 addSubview:nameLab];
+				booth1.backgroundColor = [self getBackgroundColor:[self.companyList objectAtIndex:index]];
+				
+				if (i % 2 == 0) {
+					booth1.backgroundColor = [UIColor yellowColor];				
+				}else{
+					booth1.backgroundColor = [UIColor orangeColor];	
+				}
+				[backgroundView addSubview:booth1];
+				[booth1 release];
+				index++;
 			}
-			[backgroundView addSubview:booth1];
-			[booth1 release];
+			y = y + 50;
 		}
-		y = y *2;
+		y = y + 50;
 	}
+
 
 	
 	mainView = backgroundView;
 	
 	[map addSubview:backgroundView];
 	[backgroundView release];
-	map.maximumZoomScale = 3.0;
+	map.maximumZoomScale = 2.2;
 	map.minimumZoomScale = 0.45;
 	map.clipsToBounds = YES;
 	map.delegate = self;
+*/
+}
+
+-(UIColor *)getBackgroundColor:(Company *) comp{
+	NSString * color = [[NSString alloc] initWithString:[[comp wait_time] 
+						stringByTrimmingCharactersInSet:
+														 [NSCharacterSet whitespaceAndNewlineCharacterSet]]];
+	if ([color isEqualToString:@"h"]) {
+		return [UIColor redColor];
+	}else if ([color isEqualToString:@"m"]) {
+		return [UIColor orangeColor];		
+	}else {
+		return [UIColor yellowColor];
+	}
 }
 
 
@@ -148,7 +279,7 @@
     NSString * new_years;
 	double new_gpa;
 	NSString * new_citizenship;
-    int new_wait_time;
+    NSString * new_wait_time;
     double new_distance;
     int new_ranking;
     
@@ -193,7 +324,7 @@
             }
             if(line_num == 8)
             {
-                new_wait_time = [line intValue];
+                new_wait_time = line;
             }
             if(line_num == 9)
             {
@@ -204,7 +335,11 @@
                 new_ranking = [line intValue];
                 line_num = 0;
                 
-                Company * new_company = [Company companyWithName: new_name location: new_location about: new_about majors: new_majors years: new_years gpa: new_gpa citizenship: new_citizenship wait_time: new_wait_time distance: new_distance ranking: new_ranking];
+                Company * new_company = [Company companyWithName: new_name 
+														location: new_location about: new_about 
+														  majors: new_majors years: new_years gpa: new_gpa 
+													 citizenship: new_citizenship wait_time: new_wait_time 
+														distance: new_distance ranking: new_ranking];
                 
                 [companyInfo addObject:new_company];
                 

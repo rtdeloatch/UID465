@@ -12,12 +12,23 @@
 
 @interface UpdateWaitViewController : UIViewController {
 	Company * company;
+//	NSUInteger select;
 	UILabel * companyName;
+	UIButton * shortWait;
+	UIButton * mediumWait;
+	UIButton * longWait;
 }
 
 @property (nonatomic, retain) Company * company;
 @property (nonatomic, retain) IBOutlet UILabel * companyName;
+@property (nonatomic, retain) IBOutlet UIButton * shortWait;
+@property (nonatomic, retain) IBOutlet UIButton * mediumWait;
+@property (nonatomic, retain) IBOutlet UIButton * longWait;
+//@property (nonatomic) NSUInteger select;
 
 -(IBAction)back;
+-(IBAction)shortWaitPress;
+-(IBAction)mediumWaitPress;
+-(IBAction)longWaitPress;
 
 @end

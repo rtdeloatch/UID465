@@ -8,18 +8,40 @@
 
 #import "CreatePlanViewController.h"
 #import "QualifyingCompaniesViewController.h"
+#import "Person.h"
+#import "UID465ViewController.h"
 
 @implementation CreatePlanViewController
-@synthesize companyList, myCompanies, major, year, gpa, citizen;
+@synthesize companyList, myCompanies, majorField, yearField, gpaField, citizenField, person;
+@synthesize mainView;
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
 }
 
 -(IBAction)generateQualifyList{
-	QualifyingCompaniesViewController * qualifyView = [[QualifyingCompaniesViewController alloc] initWithNibName:nil
-																							  bundle:nil];
-	qualifyView.myCompanies = [NSMutableArray arrayWithArray:self.companyList];
+	QualifyingCompaniesViewController * qualifyView = 
+	[[QualifyingCompaniesViewController alloc] initWithNibName:nil bundle:nil];
+	
+	self.person = [[[Person alloc] init] autorelease];
+	
+	double gpaDouble = [self.gpaField.text doubleValue];
+	
+	self.person.gpa = gpaDouble;
+	
+
+	qualifyView.myCompanies = self.myCompanies;//[[NSMutableArray alloc] init];
+	[qualifyView.myCompanies removeAllObjects];
+	
+	for (int i = 0; i < [self.companyList count]; i++) {
+		if ([self.person gpa] >= [[self.companyList objectAtIndex:i] gpa]) {
+			[qualifyView.myCompanies addObject:[self.companyList objectAtIndex:i]];
+		}
+	}
+	
+	
+	//qualifyView.myCompanies = [NSMutableArray arrayWithArray:self.companyList];
+	qualifyView.mainView = self.mainView;
 	[self presentModalViewController:qualifyView animated:YES];
 }
 
@@ -47,6 +69,38 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+	return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView 
+numberOfRowsInComponent:(NSInteger)component{
+	return 1;
+}
+
+- (UIView *)pickerView:(UIPickerView *)pickerView 
+			viewForRow:(NSInteger)row 
+		  forComponent:(NSInteger)component 
+		   reusingView:(UIView *)view{
+	CGRect frame = CGRectMake(0, 0, 100, 400);
+	UILabel * test = [[UILabel alloc] initWithFrame:frame];
+	[test setText:@"hi"];
+	return test;
+}
+
+
+-(BOOL) textFieldShouldBeginEditing:(UITextField *)textField{
+	
+	CGRect frame = CGRectMake(0, 240, 200, 400);
+	
+	UIPickerView * picker = [[UIPickerView alloc] initWithFrame:frame];
+	picker.delegate = self;
+	picker.dataSource = self;
+	[self.view addSubview:picker];
+	[picker release];
+	return NO;
+}
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
 	[textField resignFirstResponder];

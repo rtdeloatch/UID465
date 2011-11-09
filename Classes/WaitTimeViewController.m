@@ -27,6 +27,10 @@
 }
 */
 
+-(void)viewWillAppear:(BOOL)animated{
+	[super viewWillAppear:animated];
+}
+
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -45,6 +49,8 @@
 //Specifies the number of rows in a given section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 	return [self.companyList count];
+//	UID465AppDelegate * del = ((UID465AppDelegate *)([[UIApplication sharedApplication] delegate]));
+//	return [del.companyList count];
 }
 
 //Number of sections in table
@@ -63,14 +69,15 @@
 	}
     
 	// Configure the cell.
+//	UID465AppDelegate * del = ((UID465AppDelegate *)([[UIApplication sharedApplication] delegate]));
 	cell.textLabel.text = [[self.companyList objectAtIndex:indexPath.row] name];
+//	cell.textLabel.text = [[del.companyList objectAtIndex:indexPath.row] name];
 	return cell;
 }
 
 // Override to support row selection in the table view.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
-	NSLog(@"Hello");
     // Navigation logic may go here -- for example, create and push another view controller.
 	
 //	self.company = [self.companyList objectAtIndex:indexPath.row];
@@ -79,9 +86,14 @@
 //	self.personLoan.personsTotalLoans = [NSMutableArray array];
 
 	UpdateWaitViewController * updateWaitView = [[UpdateWaitViewController alloc] initWithNibName:nil
-																						   bundle:nil];
+																						bundle:nil];
+//	UID465AppDelegate * del = ((UID465AppDelegate *)([[UIApplication sharedApplication] delegate]));
+//	updateWaitView.select = indexPath.row;
+
+//	[del.companyList objectAtIndex:indexPath.row];//
 	updateWaitView.company = [self.companyList objectAtIndex:indexPath.row];
 	[self presentModalViewController:updateWaitView animated:YES];
+
 	//[self.navigationController pushViewController:updateWaitView animated:YES];
 }
 

@@ -7,13 +7,24 @@
 //
 
 #import "QualifyingCompaniesViewController.h"
+#import "UID465ViewController.h"
 #import "Company.h"
 
 @implementation QualifyingCompaniesViewController
-@synthesize companyList, myCompanies;
+@synthesize companyList, myCompanies, mainView;
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
+}
+
+-(IBAction)done{
+	UIViewController * parent = self.parentViewController;
+	UIViewController * grandParent = [parent parentViewController];
+	
+	[grandParent dismissModalViewControllerAnimated:YES];
+	
+	//[self dismissModalViewControllerAnimated:YES];
+
 }
 
 /*
@@ -78,6 +89,9 @@
 	[self.myCompanies removeObjectAtIndex:fromIndexPath.row];
 	[self.myCompanies insertObject:company atIndex:toIndexPath.row];
 	[company release];
+//	for (int i = 0; i < [self.myCompanies count]; i++) {
+//		NSLog(@"Name: %@", [[self.myCompanies objectAtIndex:i] name]);
+//	}
 }
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {

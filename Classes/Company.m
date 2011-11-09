@@ -11,9 +11,16 @@
 
 @implementation Company
 
-@synthesize name, location, about, majors, years, gpa, citizenship, wait_time, distance, ranking;
+@synthesize name, location, about, majors, years, gpa, citizenship;
+@synthesize wait_time, distance, ranking, companyView;
 
-+(id) companyWithName: (NSString *) newName location: (NSString *) newLocation about: (NSString *) newAbout majors: (NSString *) newMajors years: (NSString *) newYears gpa: (double) newGPA citizenship: (NSString *) newCitizenship wait_time: (int) newWait_Time distance: (double) newDistance ranking: (int) newRanking
++(id) companyWithName: (NSString *) newName 
+			 location: (NSString *) newLocation 
+				about: (NSString *) newAbout 
+			   majors: (NSString *) newMajors years: (NSString *) newYears 
+				  gpa: (double) newGPA citizenship: (NSString *) newCitizenship 
+			wait_time: (NSString *) newWait_Time distance: (double) newDistance 
+			  ranking: (int) newRanking
 {
 	Company * company = [[[Company alloc] init] autorelease];
 	company.name = newName;
@@ -26,6 +33,7 @@
     company.wait_time = newWait_Time;
     company.distance = newDistance;
     company.ranking = newRanking;
+	company.companyView = [[UIView alloc] init];
 	return company;
 }
 
