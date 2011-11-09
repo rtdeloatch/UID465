@@ -94,7 +94,7 @@ numberOfRowsInComponent:(NSInteger)component{
 	return test;
 }
 
-
+/*
 -(BOOL) textFieldShouldBeginEditing:(UITextField *)textField{
 	
 	CGRect frame = CGRectMake(0, 240, 200, 400);
@@ -106,6 +106,7 @@ numberOfRowsInComponent:(NSInteger)component{
 	[picker release];
 	return NO;
 }
+*/
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
 	[textField resignFirstResponder];
