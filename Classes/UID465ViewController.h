@@ -21,9 +21,9 @@
 	NSMutableArray * myCompanies;
 	NSArray * companyList;
 	UIView * mainView;
-	UIToolbar * bottomBar;
-	UIBarButtonItem * leftButton;
-	UIBarButtonItem * rightButton;
+    UIToolbar * toolbar;
+    UIBarButtonItem * createPlanButton;
+    UIBarButtonItem * updatePositionButton;
 }
 
 @property(nonatomic,retain) ViewCompaniesViewContoller* viewCompaniesViewController;
@@ -33,9 +33,10 @@
 @property(nonatomic,retain) NSArray * companyList;
 @property(nonatomic,retain) UIView * mainView;
 @property(nonatomic,retain) IBOutlet UIScrollView * map;
-@property(nonatomic,retain) IBOutlet UIToolbar * bottomBar;
-@property(nonatomic,retain) IBOutlet UIBarButtonItem * leftButton;
-@property(nonatomic,retain) IBOutlet UIBarButtonItem * rightButton;
+@property(nonatomic,retain) IBOutlet UIToolbar * toolbar;
+@property(nonatomic,retain) IBOutlet UIBarButtonItem * createPlanButton;
+@property(nonatomic,retain) IBOutlet UIBarButtonItem * updatePositionButton;
+
 -(IBAction)viewCompanies;
 -(IBAction)viewWaitTime;
 -(IBAction)createPlan;

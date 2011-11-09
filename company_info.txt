@@ -29,7 +29,7 @@ Computer Science,Computer Engineering,Electrical Engineering
 years:
 Sophomore,Junior,Senior,Graduate Student
 gpa:
-3.0
+3.1
 citizenship:
 Yes
 wait_time:
@@ -69,7 +69,7 @@ Business Administration,Marketing,Accounting,Finance,Economics,Psychology
 years:
 Sophomore,Junior,Senior
 gpa:
-3.0
+3.1
 citizenship:
 Yes
 wait_time:
@@ -129,7 +129,7 @@ Computer Science,Computer Engineering,Electrical Engineering
 years:
 Junior,Senior
 gpa:
-3.0
+3.1
 citizenship:
 No
 wait_time:
@@ -189,7 +189,7 @@ Computer Science,Computer Engineering
 years:
 Freshman,Sophomore,Junior,Senior
 gpa:
-3.0
+3.1
 citizenship:
 Yes
 wait_time:
@@ -219,6 +219,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing1
 location:
 San Francisco, California
@@ -234,11 +235,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+Bungie
+location:
+Cupertino, California
+about:
+Apple Inc. is an American multinational corporation that designs and markets consumer electronics, computer software, and personal computers. The company's best-known hardware products include the Macintosh line of computers, the iPod, the iPhone and the iPad. Apple software includes the Mac OS X operating system; the iTunes media browser; the iLife suite of multimedia and creativity software; the iWork suite of productivity software; Aperture, a professional photography package; Final Cut Studio, a suite of professional audio and film-industry software products; Logic Studio, a suite of music production tools; the Safari web browser; and iOS, a mobile operating system. As of July 2011, the company operates 357 retail stores in ten countries, and an online store where hardware and software products are sold. As of September 2011, Apple is the largest publicly traded company in the world by market capitalization and the largest technology company in the world by revenue and profit.
+majors:
+Computer Science,Industrial Design,Marketing
+years:
+Graduate Student
+gpa:
+3.5
+citizenship:
+Yes
+wait_time:
+h
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing2
 location:
 San Francisco, California
@@ -250,6 +269,19 @@ years:
 Junior,Senior
 gpa:
 3.2
+=======
+Microsoft
+location:
+Redmond, Washington
+about:
+Microsoft Corporation is an American public multinational corporation headquartered in Redmond, Washington, USA that develops, manufactures, licenses, and supports a wide range of products and services predominantly related to computing through its various product divisions. Established on April 4, 1975 to develop and sell BASIC interpreters for the Altair 8800, Microsoft rose to dominate the home computer operating system market with MS-DOS in the mid-1980s, followed by the Microsoft Windows line of operating systems.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering
+years:
+Sophomore,Junior,Senior,Graduate Student
+gpa:
+3.1
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 citizenship:
 Yes
 wait_time:
@@ -259,6 +291,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing3
 location:
 San Francisco, California
@@ -274,11 +307,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+Sun Microsystems
+location:
+Santa Clara, California
+about:
+Sun Microsystems, Inc. is a company that sold computers, computer components, computer software, and information technology services. Sun was founded on February 24, 1982.[2] At its height, Sun headquarters were in Santa Clara, California (part of Silicon Valley), on the former west campus of the Agnews Developmental Center.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering,General Engineering
+years:
+Sophomore,Junior,Senior
+gpa:
+3.2
+citizenship:
+No
+wait_time:
+l
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing4
 location:
 San Francisco, California
@@ -294,11 +345,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+Geico
+location:
+Fort Worth, Texas
+about:
+The Government Employees Insurance Company is an auto insurance company. It is a wholly owned subsidiary of Berkshire Hathaway that as of 2007 provided coverage for more than 10 million motor vehicles owned by more than 9 million policy holders. GEICO writes private passenger automobile insurance in all 50 U.S. states and the District of Columbia. Rather than relying on agents to sell policies, GEICO uses a direct-to-consumer sales model and puts funds saved from not paying agent commissions toward the purchase of television advertising, with several campaigns running simultaneously in national markets. Its mascot is a Gold dust day gecko with a Cockney accent. GEICO is well known in popular culture for its advertising, having made a large number of commercials intended to amuse viewers.
+majors:
+Business Administration,Marketing,Accounting,Finance,Economics,Psychology
+years:
+Sophomore,Junior,Senior
+gpa:
+3.1
+citizenship:
+Yes
+wait_time:
+l
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing5
 location:
 San Francisco, California
@@ -306,6 +375,15 @@ about:
 Cisco Systems, Inc. is an American multinational corporation headquartered in San Jose, California, United States, that designs and sells consumer electronics, networking, voice, and communications technology and services. Cisco has more than 70,000 employees and annual revenue of US$ 40.0 billion as of 2010. The stock was added to the Dow Jones Industrial Average on June 8, 2009, and is also included in the S&P 500 Index, the Russell 1000 Index, NASDAQ 100 Index and the Russell 1000 Growth Stock Index.
 majors:
 Computer Science,Mathematics
+=======
+Aflac
+location:
+Columbus, Georgia
+about:
+Aflac Incorporated is the largest provider of supplemental insurance in the United States, founded in 1955 and based in Columbus, Georgia. In the United States, Aflac underwrites a wide range of insurance policies, but is perhaps more known for its payroll deduction insurance coverage, which pays cash benefits when a policyholder has a covered accident or illness. The company states it insures "one of four Japanese households" and is "the largest life insurer in Japan in terms of individual insurance policies in force". Aflac is also well known for its supplemental medical policies.
+majors:
+Finance,Accounting,Economics,Physics,Mathematics
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 years:
 Junior,Senior
 gpa:
@@ -319,6 +397,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing6
 location:
 San Francisco, California
@@ -334,11 +413,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+DropBox
+location:
+San Francisco, California
+about:
+Dropbox is a Web-based file hosting service operated by Dropbox, Inc. that uses cloud storage to enable users to store and share files and folders with others across the Internet using file synchronization. It was founded in 2007 by MIT graduates Drew Houston and Arash Ferdowsi as a Y Combinator startup.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering,Mathematics
+years:
+Senior,Graduate Student
+gpa:
+3.5
+citizenship:
+Yes
+wait_time:
+h
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing7
 location:
 Cupertino, California
@@ -354,11 +451,29 @@ citizenship:
 Yes
 wait_time:
 h
+=======
+Box.net
+location:
+Palo Alto, California
+about:
+Box is an online File Sharing and Cloud Content Management service for enterprise companies. The company has adopted a freemium business model, and provides 5GB of free storage for personal accounts. A mobile version of the service is available for Android, iPhone, iPad and WebOS devices. Box.net's competitors include Dropbox, Huddle, Egnyte, TitanFile, Sharepoint and Sugarsync.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering
+years:
+Junior,Senior
+gpa:
+3.1
+citizenship:
+No
+wait_time:
+l
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing8
 location:
 Redmond, Washington
@@ -372,6 +487,21 @@ gpa:
 3.0
 citizenship:
 Yes
+=======
+Yahoo
+location:
+Sunnyvale, California
+about:
+Yahoo! Inc. (NASDAQ: YHOO) is an American multinational internet corporation headquartered in Sunnyvale, California, United States. The company is perhaps best known for its web portal, search engine (Yahoo! Search), Yahoo! Directory, Yahoo! Mail, Yahoo! News, Yahoo! Groups, Yahoo! Answers, advertising, online mapping (Yahoo! Maps), video sharing (Yahoo! Video), and social media websites and services. It is one of the largest websites in the United States.
+majors:
+Computer Science,Computer Engineering,Physics,Mathematics
+years:
+Senior,Graduate Student
+gpa:
+3.2
+citizenship:
+No
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 wait_time:
 m
 distance:
@@ -379,6 +509,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing9
 location:
 Santa Clara, California
@@ -394,11 +525,29 @@ citizenship:
 No
 wait_time:
 l
+=======
+Google
+location:
+Menlo Park, California
+about:
+Google Inc. is an American multinational public corporation invested in Internet search, cloud computing, and advertising technologies. Google hosts and develops a number of Internet-based services and products, and generates profit primarily from advertising through its AdWords program. The company was founded by Larry Page and Sergey Brin, often dubbed the "Google Guys", while the two were attending Stanford University as PhD candidates.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering,Mathematics,Physics
+years:
+Senior,Graduate Student
+gpa:
+3.5
+citizenship:
+No
+wait_time:
+h
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing10
 location:
 Fort Worth, Texas
@@ -410,6 +559,19 @@ years:
 Sophomore,Junior,Senior
 gpa:
 3.0
+=======
+MSN
+location:
+Seattle, Washington
+about:
+MSN (originally The Microsoft Network) is a collection of Internet sites and services provided by Microsoft. The Microsoft Network debuted as an online service and Internet service provider on August 24, 1995, to coincide with the release of the Windows 95 operating system.
+majors:
+Computer Science,Computer Engineering
+years:
+Freshman,Sophomore,Junior,Senior
+gpa:
+3.1
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 citizenship:
 Yes
 wait_time:
@@ -419,6 +581,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing11
 location:
 Columbus, Georgia
@@ -426,6 +589,15 @@ about:
 Aflac Incorporated is the largest provider of supplemental insurance in the United States, founded in 1955 and based in Columbus, Georgia. In the United States, Aflac underwrites a wide range of insurance policies, but is perhaps more known for its payroll deduction insurance coverage, which pays cash benefits when a policyholder has a covered accident or illness. The company states it insures "one of four Japanese households" and is "the largest life insurer in Japan in terms of individual insurance policies in force". Aflac is also well known for its supplemental medical policies.
 majors:
 Finance,Accounting,Economics,Physics,Mathematics
+=======
+Cisco
+location:
+San Francisco, California
+about:
+Cisco Systems, Inc. is an American multinational corporation headquartered in San Jose, California, United States, that designs and sells consumer electronics, networking, voice, and communications technology and services. Cisco has more than 70,000 employees and annual revenue of US$ 40.0 billion as of 2010. The stock was added to the Dow Jones Industrial Average on June 8, 2009, and is also included in the S&P 500 Index, the Russell 1000 Index, NASDAQ 100 Index and the Russell 1000 Growth Stock Index.
+majors:
+Computer Science,Mathematics
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 years:
 Junior,Senior
 gpa:
@@ -439,6 +611,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing12
 location:
 San Francisco, California
@@ -448,6 +621,17 @@ majors:
 Computer Science,Computer Engineering,Electrical Engineering,Mathematics
 years:
 Senior,Graduate Student
+=======
+Apple
+location:
+Cupertino, California
+about:
+Apple Inc. is an American multinational corporation that designs and markets consumer electronics, computer software, and personal computers. The company's best-known hardware products include the Macintosh line of computers, the iPod, the iPhone and the iPad. Apple software includes the Mac OS X operating system; the iTunes media browser; the iLife suite of multimedia and creativity software; the iWork suite of productivity software; Aperture, a professional photography package; Final Cut Studio, a suite of professional audio and film-industry software products; Logic Studio, a suite of music production tools; the Safari web browser; and iOS, a mobile operating system. As of July 2011, the company operates 357 retail stores in ten countries, and an online store where hardware and software products are sold. As of September 2011, Apple is the largest publicly traded company in the world by market capitalization and the largest technology company in the world by revenue and profit.
+majors:
+Computer Science,Industrial Design,Marketing
+years:
+Graduate Student
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 gpa:
 3.5
 citizenship:
@@ -459,6 +643,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing13
 location:
 Palo Alto, California
@@ -474,11 +659,29 @@ citizenship:
 No
 wait_time:
 l
+=======
+Microsoft
+location:
+Redmond, Washington
+about:
+Microsoft Corporation is an American public multinational corporation headquartered in Redmond, Washington, USA that develops, manufactures, licenses, and supports a wide range of products and services predominantly related to computing through its various product divisions. Established on April 4, 1975 to develop and sell BASIC interpreters for the Altair 8800, Microsoft rose to dominate the home computer operating system market with MS-DOS in the mid-1980s, followed by the Microsoft Windows line of operating systems.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering
+years:
+Sophomore,Junior,Senior,Graduate Student
+gpa:
+3.1
+citizenship:
+Yes
+wait_time:
+m
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing14
 location:
 Sunnyvale, California
@@ -488,17 +691,33 @@ majors:
 Computer Science,Computer Engineering,Physics,Mathematics
 years:
 Senior,Graduate Student
+=======
+Sun Microsystems
+location:
+Santa Clara, California
+about:
+Sun Microsystems, Inc. is a company that sold computers, computer components, computer software, and information technology services. Sun was founded on February 24, 1982.[2] At its height, Sun headquarters were in Santa Clara, California (part of Silicon Valley), on the former west campus of the Agnews Developmental Center.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering,General Engineering
+years:
+Sophomore,Junior,Senior
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 gpa:
 3.2
 citizenship:
 No
 wait_time:
+<<<<<<< HEAD
 m
+=======
+l
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing15
 location:
 Menlo Park, California
@@ -514,11 +733,29 @@ citizenship:
 No
 wait_time:
 h
+=======
+Geico
+location:
+Fort Worth, Texas
+about:
+The Government Employees Insurance Company is an auto insurance company. It is a wholly owned subsidiary of Berkshire Hathaway that as of 2007 provided coverage for more than 10 million motor vehicles owned by more than 9 million policy holders. GEICO writes private passenger automobile insurance in all 50 U.S. states and the District of Columbia. Rather than relying on agents to sell policies, GEICO uses a direct-to-consumer sales model and puts funds saved from not paying agent commissions toward the purchase of television advertising, with several campaigns running simultaneously in national markets. Its mascot is a Gold dust day gecko with a Cockney accent. GEICO is well known in popular culture for its advertising, having made a large number of commercials intended to amuse viewers.
+majors:
+Business Administration,Marketing,Accounting,Finance,Economics,Psychology
+years:
+Sophomore,Junior,Senior
+gpa:
+3.1
+citizenship:
+Yes
+wait_time:
+l
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing16
 location:
 Seattle, Washington
@@ -534,11 +771,29 @@ citizenship:
 Yes
 wait_time:
 l
+=======
+Aflac
+location:
+Columbus, Georgia
+about:
+Aflac Incorporated is the largest provider of supplemental insurance in the United States, founded in 1955 and based in Columbus, Georgia. In the United States, Aflac underwrites a wide range of insurance policies, but is perhaps more known for its payroll deduction insurance coverage, which pays cash benefits when a policyholder has a covered accident or illness. The company states it insures "one of four Japanese households" and is "the largest life insurer in Japan in terms of individual insurance policies in force". Aflac is also well known for its supplemental medical policies.
+majors:
+Finance,Accounting,Economics,Physics,Mathematics
+years:
+Junior,Senior
+gpa:
+3.2
+citizenship:
+Yes
+wait_time:
+m
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing17
 location:
 San Francisco, California
@@ -554,11 +809,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+DropBox
+location:
+San Francisco, California
+about:
+Dropbox is a Web-based file hosting service operated by Dropbox, Inc. that uses cloud storage to enable users to store and share files and folders with others across the Internet using file synchronization. It was founded in 2007 by MIT graduates Drew Houston and Arash Ferdowsi as a Y Combinator startup.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering,Mathematics
+years:
+Senior,Graduate Student
+gpa:
+3.5
+citizenship:
+Yes
+wait_time:
+h
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing18
 location:
 San Francisco, California
@@ -574,11 +847,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+Box.net
+location:
+Palo Alto, California
+about:
+Box is an online File Sharing and Cloud Content Management service for enterprise companies. The company has adopted a freemium business model, and provides 5GB of free storage for personal accounts. A mobile version of the service is available for Android, iPhone, iPad and WebOS devices. Box.net's competitors include Dropbox, Huddle, Egnyte, TitanFile, Sharepoint and Sugarsync.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering
+years:
+Junior,Senior
+gpa:
+3.1
+citizenship:
+No
+wait_time:
+l
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing19
 location:
 San Francisco, California
@@ -592,6 +883,21 @@ gpa:
 3.2
 citizenship:
 Yes
+=======
+Yahoo
+location:
+Sunnyvale, California
+about:
+Yahoo! Inc. (NASDAQ: YHOO) is an American multinational internet corporation headquartered in Sunnyvale, California, United States. The company is perhaps best known for its web portal, search engine (Yahoo! Search), Yahoo! Directory, Yahoo! Mail, Yahoo! News, Yahoo! Groups, Yahoo! Answers, advertising, online mapping (Yahoo! Maps), video sharing (Yahoo! Video), and social media websites and services. It is one of the largest websites in the United States.
+majors:
+Computer Science,Computer Engineering,Physics,Mathematics
+years:
+Senior,Graduate Student
+gpa:
+3.2
+citizenship:
+No
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 wait_time:
 m
 distance:
@@ -599,6 +905,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing20
 location:
 San Francisco, California
@@ -614,11 +921,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+Google
+location:
+Menlo Park, California
+about:
+Google Inc. is an American multinational public corporation invested in Internet search, cloud computing, and advertising technologies. Google hosts and develops a number of Internet-based services and products, and generates profit primarily from advertising through its AdWords program. The company was founded by Larry Page and Sergey Brin, often dubbed the "Google Guys", while the two were attending Stanford University as PhD candidates.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering,Mathematics,Physics
+years:
+Senior,Graduate Student
+gpa:
+3.5
+citizenship:
+No
+wait_time:
+h
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing21
 location:
 San Francisco, California
@@ -634,12 +959,33 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+MSN
+location:
+Seattle, Washington
+about:
+MSN (originally The Microsoft Network) is a collection of Internet sites and services provided by Microsoft. The Microsoft Network debuted as an online service and Internet service provider on August 24, 1995, to coincide with the release of the Windows 95 operating system.
+majors:
+Computer Science,Computer Engineering
+years:
+Freshman,Sophomore,Junior,Senior
+gpa:
+3.1
+citizenship:
+Yes
+wait_time:
+l
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing22
+=======
+Cisco
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 location:
 San Francisco, California
 about:
@@ -659,6 +1005,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing23
 location:
 San Francisco, California
@@ -674,11 +1021,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+Apple
+location:
+Cupertino, California
+about:
+Apple Inc. is an American multinational corporation that designs and markets consumer electronics, computer software, and personal computers. The company's best-known hardware products include the Macintosh line of computers, the iPod, the iPhone and the iPad. Apple software includes the Mac OS X operating system; the iTunes media browser; the iLife suite of multimedia and creativity software; the iWork suite of productivity software; Aperture, a professional photography package; Final Cut Studio, a suite of professional audio and film-industry software products; Logic Studio, a suite of music production tools; the Safari web browser; and iOS, a mobile operating system. As of July 2011, the company operates 357 retail stores in ten countries, and an online store where hardware and software products are sold. As of September 2011, Apple is the largest publicly traded company in the world by market capitalization and the largest technology company in the world by revenue and profit.
+majors:
+Computer Science,Industrial Design,Marketing
+years:
+Graduate Student
+gpa:
+3.5
+citizenship:
+Yes
+wait_time:
+h
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing24
 location:
 San Francisco, California
@@ -690,6 +1055,19 @@ years:
 Junior,Senior
 gpa:
 3.2
+=======
+Microsoft
+location:
+Redmond, Washington
+about:
+Microsoft Corporation is an American public multinational corporation headquartered in Redmond, Washington, USA that develops, manufactures, licenses, and supports a wide range of products and services predominantly related to computing through its various product divisions. Established on April 4, 1975 to develop and sell BASIC interpreters for the Altair 8800, Microsoft rose to dominate the home computer operating system market with MS-DOS in the mid-1980s, followed by the Microsoft Windows line of operating systems.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering
+years:
+Sophomore,Junior,Senior,Graduate Student
+gpa:
+3.1
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 citizenship:
 Yes
 wait_time:
@@ -699,6 +1077,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing25
 location:
 San Francisco, California
@@ -714,11 +1093,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+Sun Microsystems
+location:
+Santa Clara, California
+about:
+Sun Microsystems, Inc. is a company that sold computers, computer components, computer software, and information technology services. Sun was founded on February 24, 1982.[2] At its height, Sun headquarters were in Santa Clara, California (part of Silicon Valley), on the former west campus of the Agnews Developmental Center.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering,General Engineering
+years:
+Sophomore,Junior,Senior
+gpa:
+3.2
+citizenship:
+No
+wait_time:
+l
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing26
 location:
 San Francisco, California
@@ -734,11 +1131,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+Geico
+location:
+Fort Worth, Texas
+about:
+The Government Employees Insurance Company is an auto insurance company. It is a wholly owned subsidiary of Berkshire Hathaway that as of 2007 provided coverage for more than 10 million motor vehicles owned by more than 9 million policy holders. GEICO writes private passenger automobile insurance in all 50 U.S. states and the District of Columbia. Rather than relying on agents to sell policies, GEICO uses a direct-to-consumer sales model and puts funds saved from not paying agent commissions toward the purchase of television advertising, with several campaigns running simultaneously in national markets. Its mascot is a Gold dust day gecko with a Cockney accent. GEICO is well known in popular culture for its advertising, having made a large number of commercials intended to amuse viewers.
+majors:
+Business Administration,Marketing,Accounting,Finance,Economics,Psychology
+years:
+Sophomore,Junior,Senior
+gpa:
+3.1
+citizenship:
+Yes
+wait_time:
+l
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing27
 location:
 San Francisco, California
@@ -746,6 +1161,15 @@ about:
 Cisco Systems, Inc. is an American multinational corporation headquartered in San Jose, California, United States, that designs and sells consumer electronics, networking, voice, and communications technology and services. Cisco has more than 70,000 employees and annual revenue of US$ 40.0 billion as of 2010. The stock was added to the Dow Jones Industrial Average on June 8, 2009, and is also included in the S&P 500 Index, the Russell 1000 Index, NASDAQ 100 Index and the Russell 1000 Growth Stock Index.
 majors:
 Computer Science,Mathematics
+=======
+Aflac
+location:
+Columbus, Georgia
+about:
+Aflac Incorporated is the largest provider of supplemental insurance in the United States, founded in 1955 and based in Columbus, Georgia. In the United States, Aflac underwrites a wide range of insurance policies, but is perhaps more known for its payroll deduction insurance coverage, which pays cash benefits when a policyholder has a covered accident or illness. The company states it insures "one of four Japanese households" and is "the largest life insurer in Japan in terms of individual insurance policies in force". Aflac is also well known for its supplemental medical policies.
+majors:
+Finance,Accounting,Economics,Physics,Mathematics
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 years:
 Junior,Senior
 gpa:
@@ -759,6 +1183,7 @@ distance:
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing28
 location:
 San Francisco, California
@@ -774,11 +1199,29 @@ citizenship:
 Yes
 wait_time:
 m
+=======
+DropBox
+location:
+San Francisco, California
+about:
+Dropbox is a Web-based file hosting service operated by Dropbox, Inc. that uses cloud storage to enable users to store and share files and folders with others across the Internet using file synchronization. It was founded in 2007 by MIT graduates Drew Houston and Arash Ferdowsi as a Y Combinator startup.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering,Mathematics
+years:
+Senior,Graduate Student
+gpa:
+3.5
+citizenship:
+Yes
+wait_time:
+h
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1
 distance:
 0
 ranking:
 0
 name:
+<<<<<<< HEAD
 Thing29
 location:
 San Francisco, California
@@ -798,3 +1241,24 @@ distance:
 0
 ranking:
 0
+=======
+Box.net
+location:
+Palo Alto, California
+about:
+Box is an online File Sharing and Cloud Content Management service for enterprise companies. The company has adopted a freemium business model, and provides 5GB of free storage for personal accounts. A mobile version of the service is available for Android, iPhone, iPad and WebOS devices. Box.net's competitors include Dropbox, Huddle, Egnyte, TitanFile, Sharepoint and Sugarsync.
+majors:
+Computer Science,Computer Engineering,Electrical Engineering
+years:
+Junior,Senior
+gpa:
+3.1
+citizenship:
+No
+wait_time:
+l
+distance:
+0
+ranking:
+0
+>>>>>>> 7ba664b89d598c76485b2109d18d351d9dc8f5b1

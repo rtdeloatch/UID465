@@ -8,12 +8,14 @@
 
 #import "CreatePlanViewController.h"
 #import "QualifyingCompaniesViewController.h"
+
 #import "Person.h"
 #import "UID465ViewController.h"
 
 @implementation CreatePlanViewController
 @synthesize companyList, myCompanies, majorField, yearField, gpaField, citizenField, person;
 @synthesize mainView;
+
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
@@ -55,12 +57,15 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
+/**
+- (void)viewDidLoad 
+{
     [super viewDidLoad];
+    
 }
-*/
+**/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
