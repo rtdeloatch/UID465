@@ -2,9 +2,9 @@
 //  DDFileReader.h
 //  UID465
 //
-//  Ali Razfar is a beast
+//  ali is a beast
 //
-//  Created by mac on 11/7/11.
+//  Created by ali on 11/7/11.
 //
 
 #import <Foundation/Foundation.h>

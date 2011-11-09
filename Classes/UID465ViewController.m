@@ -19,7 +19,7 @@
 @implementation UID465ViewController
 
 @synthesize viewCompaniesViewController, waitTimeViewController, myCompanies, companyList;
-@synthesize createPlanViewController, map, mainView;
+@synthesize createPlanViewController, map, mainView, toolbar, createPlanButton, updatePositionButton;
 
 
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
@@ -89,8 +89,8 @@
      **/
     
     self.companyList = [self assembleCompanies];
-	
-
+    
+    
 /*	
 	UIImageView *temp = [[UIImageView alloc] initWithImage:[UIImage imageWithData:
 															[NSData dataWithContentsOfURL:
@@ -152,10 +152,16 @@
     double new_distance;
     int new_ranking;
     
+    BOOL new_freshman = false;
+    BOOL new_sophomore = false;
+    BOOL new_junior = false;
+    BOOL new_senior = false;
+    BOOL new_gradstudent = false;
+    
     int count = 0;
     int line_num = 1;
     
-    DDFileReader * reader = [[DDFileReader alloc] initWithFilePath:@"/Users/robertdeloatch/UID465/company_info.txt"];
+    DDFileReader * reader = [[DDFileReader alloc] initWithFilePath:@"/Users/mac/UID465/UID465/company_info.txt"];
     NSString * line = nil;
     while ((line = [reader readLine]))
     {
@@ -178,10 +184,39 @@
             if(line_num == 4)
             {
                 new_majors = line;
+                new_majors = [new_majors stringByReplacingOccurrencesOfString:(@",") withString:(@"\n")];
             }
             if(line_num == 5)
             {
                 new_years = line;
+                if([new_years rangeOfString:(@"Freshman")].location != NSNotFound)
+                {
+                    new_freshman = true;
+                }
+                if([new_years rangeOfString:(@"Sophomore")].location != NSNotFound)
+                {
+                    new_sophomore = true;
+                }
+                if([new_years rangeOfString:(@"Junior")].location != NSNotFound)
+                {
+                    new_junior = true;
+                }
+                if([new_years rangeOfString:(@"Senior")].location != NSNotFound)
+                {
+                    new_senior = true;
+                }
+                if([new_years rangeOfString:(@"Graduate Student")].location != NSNotFound)
+                {
+                    new_gradstudent = true;
+                }
+                
+                //NSLog(new_years);
+                //NSLog(@"%@\n", (new_freshman ? @"YES" : @"NO"));
+                //NSLog(@"%@\n", (new_sophomore ? @"YES" : @"NO"));
+                //NSLog(@"%@\n", (new_junior ? @"YES" : @"NO"));
+                //NSLog(@"%@\n", (new_senior ? @"YES" : @"NO"));
+                //NSLog(@"%@\n", (new_gradstudent ? @"YES" : @"NO"));
+
             }
             if(line_num == 6)
             {
@@ -204,9 +239,15 @@
                 new_ranking = [line intValue];
                 line_num = 0;
                 
-                Company * new_company = [Company companyWithName: new_name location: new_location about: new_about majors: new_majors years: new_years gpa: new_gpa citizenship: new_citizenship wait_time: new_wait_time distance: new_distance ranking: new_ranking];
+                Company * new_company = [Company companyWithName: new_name location: new_location about: new_about majors: new_majors gpa: new_gpa citizenship: new_citizenship wait_time: new_wait_time distance: new_distance ranking:  new_ranking freshman: new_freshman sophomore: new_sophomore junior:  new_junior senior: new_senior gradstudent: new_gradstudent];
                 
                 [companyInfo addObject:new_company];
+                
+                new_freshman = false;
+                new_sophomore = false;
+                new_junior = false;
+                new_senior = false;
+                new_gradstudent = false;
                 
             }
             

@@ -15,7 +15,6 @@
 	UITextField * major;
 	UITextField * year;
 	UITextField * gpa;
-	UISwitch * citizen;
 	
 }
 
@@ -24,7 +23,6 @@
 @property (nonatomic,retain) IBOutlet UITextField * major;
 @property (nonatomic,retain) IBOutlet UITextField * year;
 @property (nonatomic,retain) IBOutlet UITextField * gpa;
-@property (nonatomic,retain) IBOutlet UISwitch * citizen;
 
 -(IBAction)back;
 -(IBAction)generateQualifyList;

@@ -29,7 +29,7 @@ Computer Science,Computer Engineering,Electrical Engineering
 years:
 Sophomore,Junior,Senior,Graduate Student
 gpa:
-3.0
+3.1
 citizenship:
 Yes
 wait_time:
@@ -69,7 +69,7 @@ Business Administration,Marketing,Accounting,Finance,Economics,Psychology
 years:
 Sophomore,Junior,Senior
 gpa:
-3.0
+3.1
 citizenship:
 Yes
 wait_time:
@@ -129,7 +129,7 @@ Computer Science,Computer Engineering,Electrical Engineering
 years:
 Junior,Senior
 gpa:
-3.0
+3.1
 citizenship:
 No
 wait_time:
@@ -189,7 +189,7 @@ Computer Science,Computer Engineering
 years:
 Freshman,Sophomore,Junior,Senior
 gpa:
-3.0
+3.1
 citizenship:
 Yes
 wait_time:

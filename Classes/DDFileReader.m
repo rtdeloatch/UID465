@@ -2,7 +2,7 @@
 //  DDFileReader.m
 //  UID465
 //
-//  Ali Razfar is a beast
+//  ali is a beast
 //
 //  Created by mac on 11/7/11.
 //
