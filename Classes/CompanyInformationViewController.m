@@ -34,9 +34,9 @@
 	[scrollView setScrollEnabled:YES];
 	[scrollView setContentSize:CGSizeMake(320, 875)];
 	
-    about.layer.cornerRadius = 5.0;
+    about.layer.cornerRadius = 10.0;
     about.clipsToBounds = YES;
-    majors.layer.cornerRadius = 5.0;
+    majors.layer.cornerRadius = 10.0;
     majors.clipsToBounds = YES;
     
 	name.text = self.company.name;
