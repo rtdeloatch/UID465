@@ -27,16 +27,49 @@
 	
 	self.person = [[[Person alloc] init] autorelease];
 	
-	double gpaDouble = [self.gpaField.text doubleValue];
+    NSString * temp_major = self.majorField.text;
+    NSString * temp_year = self.yearField.text;
+	double temp_gpa = [self.gpaField.text doubleValue];
+    NSString * temp_citizen;
+    
+    if(self.citizenField.selectedSegmentIndex == 0)
+    {
+        temp_citizen = @"Yes";
+    }
+    if(self.citizenField.selectedSegmentIndex == 1)
+    {
+        temp_citizen = @"No";
+    }
 	
-	self.person.gpa = gpaDouble;
+	self.person.gpa = temp_gpa;
+    self.person.maj = temp_major;
+    self.person.year = temp_year;
+    self.person.citizen = temp_citizen;
+    
+    NSLog(temp_major);
+    //NSLog(temp_year);
+    //NSLog(@"%f\n", temp_gpa);
+    //NSLog(temp_citizen);
+    
+    NSLog(self.person.maj);
 	
-
 	qualifyView.myCompanies = self.myCompanies;//[[NSMutableArray alloc] init];
 	[qualifyView.myCompanies removeAllObjects];
 	
-	for (int i = 0; i < [self.companyList count]; i++) {
-		if ([self.person gpa] >= [[self.companyList objectAtIndex:i] gpa]) {
+	for (int i = 0; i < [self.companyList count]; i++)
+    {
+		if (([self.person gpa] >= [[self.companyList objectAtIndex:i] gpa])
+            && ([[[[self.companyList objectAtIndex:i] majors] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] rangeOfString:([[self.person maj] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]])].location != NSNotFound)
+            &&  ([[[[self.companyList objectAtIndex:i] years] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] rangeOfString:([[self.person year] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]])].location != NSNotFound)
+            && ([[[[self.companyList objectAtIndex:i] citizenship] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] rangeOfString:([[self.person citizen] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]])].location != NSNotFound)
+            )
+        {
+            NSLog([[self.companyList objectAtIndex:i] name]);
+            NSLog([[self.companyList objectAtIndex:i] majors]);
+            NSLog([[self.companyList objectAtIndex:i] years]);
+            NSLog(@"%f\n", [[self.companyList objectAtIndex:i] gpa]);
+			
+            
 			[qualifyView.myCompanies addObject:[self.companyList objectAtIndex:i]];
 		}
 	}
@@ -45,6 +78,7 @@
 	//qualifyView.myCompanies = [NSMutableArray arrayWithArray:self.companyList];
 	qualifyView.mainView = self.mainView;
 	[self presentModalViewController:qualifyView animated:YES];
+	
 }
 
 /*

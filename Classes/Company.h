@@ -14,6 +14,7 @@
 	NSString * location;
 	NSString * about;
 	NSString * majors;
+    NSString * years;
     BOOL freshman;
     BOOL sophomore;
     BOOL junior;
@@ -31,6 +32,7 @@
 @property (nonatomic, retain) NSString * location;
 @property (nonatomic, retain) NSString * about;
 @property (nonatomic, retain) NSString * majors;
+@property (nonatomic, retain) NSString * years;
 @property (nonatomic, retain) UIView * companyView;
 @property (nonatomic) double gpa;
 @property (nonatomic, retain) NSString * citizenship;
@@ -44,6 +46,6 @@
 @property (nonatomic) BOOL gradstudent;
 
 
-+(id) companyWithName: (NSString *) newName location: (NSString *) newLocation about: (NSString *) newAbout majors: (NSString *) newMajors gpa: (double) newGPA citizenship: (NSString *) newCitizenship wait_time: (NSString *) newWait_Time distance: (double) newDistance ranking: (int) newRanking freshman: (BOOL) newFreshman sophomore: (BOOL) newSophomore junior: (BOOL) newJunior senior: (BOOL) newSenior gradstudent: (BOOL) newGradStudent;
++(id) companyWithName: (NSString *) newName location: (NSString *) newLocation about: (NSString *) newAbout majors: (NSString *) newMajors gpa: (double) newGPA citizenship: (NSString *) newCitizenship wait_time: (NSString *) newWait_Time distance: (double) newDistance ranking: (int) newRanking freshman: (BOOL) newFreshman sophomore: (BOOL) newSophomore junior: (BOOL) newJunior senior: (BOOL) newSenior gradstudent: (BOOL) newGradStudent years: (NSString *) newYears;
 
 @end

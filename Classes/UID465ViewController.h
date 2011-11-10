@@ -41,7 +41,7 @@
 -(IBAction)viewWaitTime;
 -(IBAction)createPlan;
 -(IBAction)updatePosition;
--(void)draw;
+-(void)draw:(NSUInteger) pos;
 - (NSArray *)assembleCompanies;
 -(UIColor *)getBackgroundColor:(Company *)comp;
 -(void)updateBottomBar:(BOOL)checked;

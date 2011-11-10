@@ -47,41 +47,52 @@
 	[self presentModalViewController:createPlanView animated:YES];
 }
 
+-(void)previousCompany:(id)sender{
+	//CreatePlanViewController * createPlanView = [[CreatePlanViewController alloc] initWithNibName:nil bundle:nil];
+	//createPlanView.companyList = self.companyList;
+	//createPlanView.myCompanies = self.myCompanies;
+	//createPlanView.mainView = self;
+	//[self presentModalViewController:createPlanView animated:YES];
+	NSLog(@"HelloMoto");
+	[self draw:1];
+}
+
 -(IBAction)updatePosition{
-   
-}
-
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-	[super viewDidLoad];
-	CGRect frame = CGRectMake(0, 0, 320, 480);
-	self.view = [[UIView alloc] initWithFrame:frame];
-	self.view.backgroundColor = [UIColor darkGrayColor];
 	
-	self.bottomBar = [[UIToolbar alloc] init];
-	[self.bottomBar sizeToFit];
-}*/
+}
+
+/*
+ // The designated initializer. Override to perform setup that is required before the view is loaded.
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+ if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+ // Custom initialization
+ }
+ return self;
+ }
+ */
+
+
+/*
+ // Implement loadView to create a view hierarchy programmatically, without using a nib.
+ - (void)loadView {
+ [super viewDidLoad];
+ CGRect frame = CGRectMake(0, 0, 320, 480);
+ self.view = [[UIView alloc] initWithFrame:frame];
+ self.view.backgroundColor = [UIColor darkGrayColor];
+ 
+ self.bottomBar = [[UIToolbar alloc] init];
+ [self.bottomBar sizeToFit];
+ }*/
 
 
 -(void)updateBottomBar:(BOOL)checked{
 	NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
-	UIBarButtonItem *barButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Apple"
-																	   style:UIBarButtonItemStylePlain 
-																	  target:self 
-																	  action:@selector(createPlan:)] autorelease];
+	UIBarButtonItem *barButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Next"
+																	   style:UIBarButtonItemStyleDone
+																	  target:self
+																	  action:@selector(previousCompany:)] autorelease];
 	[toolbarItems replaceObjectAtIndex:0 withObject:barButtonItem];
+	
 	
 	toolbar.items = toolbarItems;
 }
@@ -89,23 +100,30 @@
 
 -(void)viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
-	[self draw];
-
-//	[self updateBottomBar:YES];
+	
+	
+	
+	if ([self.myCompanies count] > 0) {
+		[self updateBottomBar:YES];
+		
+	}
+	[self draw:0];
+	//	[self updateBottomBar:YES];
 	
 	//if mycompanies is notempty
-//	[self.leftButton se
-//	[self.rightButton setTitle:@""];
+	//	[self.leftButton se
+	//	[self.rightButton setTitle:@""];
 	
 	
-//	for (int i = 0; i < [self.myCompanies count]; i++) {
-//		NSLog(@"Names in mycompane: %@", [[self.myCompanies objectAtIndex:i] name]);
-//	}
-//	NSLog(@"Uh oh");
+	//	for (int i = 0; i < [self.myCompanies count]; i++) {
+	//		NSLog(@"Names in mycompane: %@", [[self.myCompanies objectAtIndex:i] name]);
+	//	}
+	//	NSLog(@"Uh oh");
 }
 
-
--(void)draw{
+/*Function will need more parameters to allow the main view to only be drawn once*/
+/*Maybe pass the views and frames and then push them??*/
+-(void)draw:(NSUInteger) pos{
 	map.contentSize = CGSizeMake(700, 900);
 	CGRect myFrame = CGRectMake(0, 0, 700, 900);
 	UIView * backgroundView = [[UIView alloc] initWithFrame:myFrame];
@@ -114,7 +132,7 @@
 	int x = 100;
 	int y = 50;
 	int index = 0;
-	
+	NSLog(@"within");
 	for (int sections = 0; sections < 4; sections++) {
 		for (int row = 0; row < 2; row++) {
 			for (int i = 0; i < 5; i++) {
@@ -125,18 +143,42 @@
 				nameLab.backgroundColor = [UIColor clearColor];
 				nameLab.text = [[self.companyList objectAtIndex:index] name];
 				
-
+				
 				myFrame = CGRectMake(20, 0, 38, 38);
 				//Works
+				
 				UIImage * img = [[UIImage alloc] initWithContentsOfFile:@"/Users/robertdeloatch/UID465/gps.png"];
 				UIImageView * dot = [[UIImageView alloc] initWithFrame:myFrame];
 				[dot setImage:img];
 				
+				UIImage * img2 = [[UIImage alloc] initWithContentsOfFile:@"/Users/robertdeloatch/UID465/TrackingDot.png"];
+				UIImageView * dot2 = [[UIImageView alloc] initWithFrame:myFrame];
+				[dot2 setImage:img2];
+				
+				
+				//	NSLog(@"within2");
+				//	NSLog(@"%d", pos);
+				
+				
+				
 				for(Company * c in self.myCompanies){
-					if ([[c name] isEqualToString:nameLab.text]) {
+					NSLog([c name]);
+					if ([[[c name] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+						 isEqualToString:[@"Geico" stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]] && (pos == 1)
+						&& [[[c name] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+							isEqualToString:[nameLab.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]]) {
+							NSLog(@"Who am i");
+							[nameLab addSubview:dot2];
+							//pos=0;
+						}
+					else if ([[[c name] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+							  isEqualToString:[nameLab.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]]) {
+						NSLog(@"frewgagefg %d", pos);
 						[nameLab addSubview:dot];
 					}
 				}
+				
+				
 				
 				//[nameLab addSubview:dot];
 				
@@ -176,88 +218,88 @@
     [super viewDidLoad];
     
     
-/**	
-	self.companyList = [NSArray arrayWithObjects:[Company companyWithName:@"Apple" location:@"A7"],
-						[Company companyWithName:@"Microsoft" location:@"B5"],
-						[Company companyWithName:@"Sun Microsystems" location:@"J7"],
-						[Company companyWithName:@"Geico" location:@"C7"],
-						[Company companyWithName:@"Aflac" location:@"F3"],
-						[Company companyWithName:@"DropBox" location:@"C1"],
-						[Company companyWithName:@"Box.net" location:@"C4"],
-						[Company companyWithName:@"Yahoo" location:@"A2"],
-						[Company companyWithName:@"Google" location:@"B2"],
-						[Company companyWithName:@"MSN" location:@"B2"],
-						[Company companyWithName:@"Cisco" location:@"B2"],
-						nil];
- **/    
-     
+	/**	
+	 self.companyList = [NSArray arrayWithObjects:[Company companyWithName:@"Apple" location:@"A7"],
+	 [Company companyWithName:@"Microsoft" location:@"B5"],
+	 [Company companyWithName:@"Sun Microsystems" location:@"J7"],
+	 [Company companyWithName:@"Geico" location:@"C7"],
+	 [Company companyWithName:@"Aflac" location:@"F3"],
+	 [Company companyWithName:@"DropBox" location:@"C1"],
+	 [Company companyWithName:@"Box.net" location:@"C4"],
+	 [Company companyWithName:@"Yahoo" location:@"A2"],
+	 [Company companyWithName:@"Google" location:@"B2"],
+	 [Company companyWithName:@"MSN" location:@"B2"],
+	 [Company companyWithName:@"Cisco" location:@"B2"],
+	 nil];
+	 **/    
+	
     
     self.companyList = [self assembleCompanies];
-
+	
 	self.myCompanies = [[NSMutableArray alloc] init];
 	NSLog(@"%d", [self.companyList count]);
 	
-/*	
-	UIImageView *temp = [[UIImageView alloc] initWithImage:[UIImage imageWithData:
-															[NSData dataWithContentsOfURL:
-															 [NSURL URLWithString:@"http://www.lonelyplanet.com/maps/pacific/papua-new-guinea/map_of_papua-new-guinea.jpg"]]]];
-	[self setImage:temp];
-*/	
-//	map.contentSize = CGSizeMake(temp.frame.size.width, temp.frame.size.height);
-/*	
-	map.contentSize = CGSizeMake(700, 900);
-	CGRect myFrame = CGRectMake(0, 0, 700, 900);
-	UIView * backgroundView = [[UIView alloc] initWithFrame:myFrame];
-	backgroundView.backgroundColor = [UIColor grayColor];
-	
-	//mainView = backgroundView;
-	
-	int x = 100;
-	int y = 50;
-	int index = 0;
-	
-	for (int sections = 0; sections < 4; sections++) {
-		for (int row = 0; row < 2; row++) {
-			for (int i = 0; i < 5; i++) {
-				myFrame = CGRectMake((i*x) + x, y, 100, 50);
-				UIView * booth1 = [[UIView alloc] initWithFrame:myFrame];
-				CGRect frameLabel = CGRectMake(10, 10, 70, 30);
-				UILabel * nameLab = [[UILabel alloc] initWithFrame:frameLabel];
-				nameLab.backgroundColor = [UIColor clearColor];
-				nameLab.text = [[self.companyList objectAtIndex:index] name];
-				[booth1 addSubview:nameLab];
-				booth1.backgroundColor = [self getBackgroundColor:[self.companyList objectAtIndex:index]];
-				
-				if (i % 2 == 0) {
-					booth1.backgroundColor = [UIColor yellowColor];				
-				}else{
-					booth1.backgroundColor = [UIColor orangeColor];	
-				}
-				[backgroundView addSubview:booth1];
-				[booth1 release];
-				index++;
-			}
-			y = y + 50;
-		}
-		y = y + 50;
-	}
-
-
-	
-	mainView = backgroundView;
-	
-	[map addSubview:backgroundView];
-	[backgroundView release];
-	map.maximumZoomScale = 2.2;
-	map.minimumZoomScale = 0.45;
-	map.clipsToBounds = YES;
-	map.delegate = self;
-*/
+	/*	
+	 UIImageView *temp = [[UIImageView alloc] initWithImage:[UIImage imageWithData:
+	 [NSData dataWithContentsOfURL:
+	 [NSURL URLWithString:@"http://www.lonelyplanet.com/maps/pacific/papua-new-guinea/map_of_papua-new-guinea.jpg"]]]];
+	 [self setImage:temp];
+	 */	
+	//	map.contentSize = CGSizeMake(temp.frame.size.width, temp.frame.size.height);
+	/*	
+	 map.contentSize = CGSizeMake(700, 900);
+	 CGRect myFrame = CGRectMake(0, 0, 700, 900);
+	 UIView * backgroundView = [[UIView alloc] initWithFrame:myFrame];
+	 backgroundView.backgroundColor = [UIColor grayColor];
+	 
+	 //mainView = backgroundView;
+	 
+	 int x = 100;
+	 int y = 50;
+	 int index = 0;
+	 
+	 for (int sections = 0; sections < 4; sections++) {
+	 for (int row = 0; row < 2; row++) {
+	 for (int i = 0; i < 5; i++) {
+	 myFrame = CGRectMake((i*x) + x, y, 100, 50);
+	 UIView * booth1 = [[UIView alloc] initWithFrame:myFrame];
+	 CGRect frameLabel = CGRectMake(10, 10, 70, 30);
+	 UILabel * nameLab = [[UILabel alloc] initWithFrame:frameLabel];
+	 nameLab.backgroundColor = [UIColor clearColor];
+	 nameLab.text = [[self.companyList objectAtIndex:index] name];
+	 [booth1 addSubview:nameLab];
+	 booth1.backgroundColor = [self getBackgroundColor:[self.companyList objectAtIndex:index]];
+	 
+	 if (i % 2 == 0) {
+	 booth1.backgroundColor = [UIColor yellowColor];				
+	 }else{
+	 booth1.backgroundColor = [UIColor orangeColor];	
+	 }
+	 [backgroundView addSubview:booth1];
+	 [booth1 release];
+	 index++;
+	 }
+	 y = y + 50;
+	 }
+	 y = y + 50;
+	 }
+	 
+	 
+	 
+	 mainView = backgroundView;
+	 
+	 [map addSubview:backgroundView];
+	 [backgroundView release];
+	 map.maximumZoomScale = 2.2;
+	 map.minimumZoomScale = 0.45;
+	 map.clipsToBounds = YES;
+	 map.delegate = self;
+	 */
 }
 
 -(UIColor *)getBackgroundColor:(Company *) comp{
 	NSString * color = [[NSString alloc] initWithString:[[comp wait_time] 
-						stringByTrimmingCharactersInSet:
+														 stringByTrimmingCharactersInSet:
 														 [NSCharacterSet whitespaceAndNewlineCharacterSet]]];
 	if ([color isEqualToString:@"h"]) {
 		return [UIColor redColor];
@@ -271,9 +313,9 @@
 
 - (NSArray *)assembleCompanies
 {
-        
+	
     NSMutableArray * companyInfo = [[NSMutableArray alloc] init];
-
+	
     NSString * new_name;
 	NSString * new_location;
 	NSString * new_about;
@@ -349,7 +391,7 @@
                 //NSLog(@"%@\n", (new_junior ? @"YES" : @"NO"));
                 //NSLog(@"%@\n", (new_senior ? @"YES" : @"NO"));
                 //NSLog(@"%@\n", (new_gradstudent ? @"YES" : @"NO"));
-
+				
             }
             if(line_num == 6)
             {
@@ -372,8 +414,8 @@
                 new_ranking = [line intValue];
                 line_num = 0;
                 
-                Company * new_company = [Company companyWithName: new_name location: new_location about: new_about majors: new_majors gpa: new_gpa citizenship: new_citizenship wait_time: new_wait_time distance: new_distance ranking:  new_ranking freshman: new_freshman sophomore: new_sophomore junior:  new_junior senior: new_senior gradstudent: new_gradstudent];
-
+                Company * new_company = [Company companyWithName: new_name location: new_location about: new_about majors: new_majors gpa: new_gpa citizenship: new_citizenship wait_time: new_wait_time distance: new_distance ranking:  new_ranking freshman: new_freshman sophomore: new_sophomore junior:  new_junior senior: new_senior gradstudent: new_gradstudent years: new_years];
+				
                 
                 [companyInfo addObject:new_company];
                 
@@ -402,12 +444,12 @@
 
 
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
