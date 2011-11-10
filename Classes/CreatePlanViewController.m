@@ -8,7 +8,7 @@
 
 #import "CreatePlanViewController.h"
 #import "QualifyingCompaniesViewController.h"
-
+#import "Company.h"
 #import "Person.h"
 #import "UID465ViewController.h"
 

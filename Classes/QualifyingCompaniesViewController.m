@@ -11,7 +11,7 @@
 #import "Company.h"
 
 @implementation QualifyingCompaniesViewController
-@synthesize companyList, myCompanies, mainView;
+@synthesize companyList, myCompanies, mainView, tableView;
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
@@ -26,6 +26,11 @@
 	//[self dismissModalViewControllerAnimated:YES];
 
 }
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+
+}
+
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.

@@ -26,6 +26,7 @@
 	return mainView;
 }
 
+
 -(IBAction)viewCompanies{
 	ViewCompaniesViewContoller * companiesView = [[ViewCompaniesViewContoller alloc] initWithNibName:nil
 																							  bundle:nil];
@@ -208,6 +209,7 @@
 	[backgroundView release];
 	map.maximumZoomScale = 2.2;
 	map.minimumZoomScale = 0.45;
+	[map setZoomScale:0.5 animated:YES];
 	map.clipsToBounds = YES;
 	map.delegate = self;
 }
