@@ -13,19 +13,35 @@
 #import "UID465ViewController.h"
 
 @implementation CreatePlanViewController
-@synthesize companyList, myCompanies, majorField, yearField, gpaField, citizenField, person;
-@synthesize mainView;
+@synthesize companyList, myCompanies, majorField, yearField, gpaField, citizenField, me;
+@synthesize mainView, didCreatePlan;
 
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
 }
 
+-(IBAction)editCurrentPlan{
+	QualifyingCompaniesViewController * qualifyView = 
+	[[QualifyingCompaniesViewController alloc] initWithNibName:nil bundle:nil];
+	
+	qualifyView.myCompanies = self.myCompanies;
+	qualifyView.mainView = self.mainView;
+	qualifyView.didCreatePlan = self.didCreatePlan;
+	[self presentModalViewController:qualifyView animated:YES];
+}
+
+-(IBAction)editCurrentPosition{
+	
+}
+
 -(IBAction)generateQualifyList{
 	QualifyingCompaniesViewController * qualifyView = 
 	[[QualifyingCompaniesViewController alloc] initWithNibName:nil bundle:nil];
 	
-	self.person = [[[Person alloc] init] autorelease];
+	//self.person = [[[Person alloc] init] autorelease];
+	
+	
 	
     NSString * temp_major = self.majorField.text;
     NSString * temp_year = self.yearField.text;
@@ -41,32 +57,32 @@
         temp_citizen = @"No";
     }
 	
-	self.person.gpa = temp_gpa;
-    self.person.maj = temp_major;
-    self.person.year = temp_year;
-    self.person.citizen = temp_citizen;
+	self.me.gpa = temp_gpa;
+    self.me.maj = temp_major;
+    self.me.year = temp_year;
+    self.me.citizen = temp_citizen;
     
-    NSLog(temp_major);
+    //NSLog(temp_major);
     //NSLog(temp_year);
     //NSLog(@"%f\n", temp_gpa);
     //NSLog(temp_citizen);
     
-    NSLog(self.person.maj);
+   // NSLog(self.person.maj);
 	
 	qualifyView.myCompanies = self.myCompanies;//[[NSMutableArray alloc] init];
 	[qualifyView.myCompanies removeAllObjects];
 	
 	for (int i = 0; i < [self.companyList count]; i++)
     {
-		if (([self.person gpa] >= [[self.companyList objectAtIndex:i] gpa])
-            && ([[[[self.companyList objectAtIndex:i] majors] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] rangeOfString:([[self.person maj] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]])].location != NSNotFound)
-            &&  ([[[[self.companyList objectAtIndex:i] years] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] rangeOfString:([[self.person year] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]])].location != NSNotFound)
-            && ([[[[self.companyList objectAtIndex:i] citizenship] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] rangeOfString:([[self.person citizen] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]])].location != NSNotFound)
-            )
+		if (([self.me gpa] >= [[self.companyList objectAtIndex:i] gpa])
+            && ([[[[self.companyList objectAtIndex:i] majors] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] rangeOfString:([[self.me maj] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]])].location != NSNotFound)
+            &&  ([[[[self.companyList objectAtIndex:i] years] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] rangeOfString:([[self.me year] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]])].location != NSNotFound)
+            && ([[[[self.companyList objectAtIndex:i] citizenship] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] rangeOfString:([[self.me citizen] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]])].location != NSNotFound)
+            && (![self.myCompanies containsObject:[self.companyList objectAtIndex:i]]))
         {
-            NSLog([[self.companyList objectAtIndex:i] name]);
-            NSLog([[self.companyList objectAtIndex:i] majors]);
-            NSLog([[self.companyList objectAtIndex:i] years]);
+        //    NSLog([[self.companyList objectAtIndex:i] name]);
+        //    NSLog([[self.companyList objectAtIndex:i] majors]);
+        //    NSLog([[self.companyList objectAtIndex:i] years]);
             NSLog(@"%f\n", [[self.companyList objectAtIndex:i] gpa]);
 			
             
@@ -77,6 +93,7 @@
 	
 	//qualifyView.myCompanies = [NSMutableArray arrayWithArray:self.companyList];
 	qualifyView.mainView = self.mainView;
+	qualifyView.didCreatePlan = self.didCreatePlan;
 	[self presentModalViewController:qualifyView animated:YES];
 	
 }
@@ -93,13 +110,18 @@
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-/**
+
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
-    
+	if (self.me.gpa > 0) {
+		self.gpaField.text = [[NSString alloc] initWithFormat:@"%.2lf",self.me.gpa];
+		self.yearField.text = self.me.year;
+		self.majorField.text = self.me.maj;
+		//Need to do segment control
+	}
 }
-**/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

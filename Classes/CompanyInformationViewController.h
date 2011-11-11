@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @class Company;
-@interface CompanyInformationViewController : UIViewController <UIScrollViewDelegate>{
+@class Person;
+@interface CompanyInformationViewController : UIViewController <UIScrollViewDelegate, UIAlertViewDelegate>{
 	Company * company;
 	UIScrollView * scrollView;
 	UITextView * majors;
@@ -24,6 +25,10 @@
     UILabel * junior;
     UILabel * senior;
     UILabel * gradstudent;
+	
+	Person * me;
+	NSMutableArray * myCompanies;
+	NSMutableArray * didCreatePlan;	
 }
 
 @property (nonatomic, retain) Company * company;
@@ -39,8 +44,12 @@
 @property (nonatomic, retain) IBOutlet UILabel * junior;
 @property (nonatomic, retain) IBOutlet UILabel * senior;
 @property (nonatomic, retain) IBOutlet UILabel * gradstudent;
+@property (nonatomic, retain) Person * me;
+@property (nonatomic, retain) NSMutableArray * myCompanies;
+@property (nonatomic, retain) NSMutableArray * didCreatePlan;
 
 
 -(IBAction)back;
+-(IBAction)add;
 
 @end

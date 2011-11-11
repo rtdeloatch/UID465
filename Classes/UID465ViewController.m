@@ -13,13 +13,14 @@
 #import "WaitTimeViewController.h"
 #import "CreatePlanViewController.h"
 #import "Company.h"
+#import "Person.h"
 #import "DDFileReader.h"
 
 
 @implementation UID465ViewController
 
-@synthesize viewCompaniesViewController, waitTimeViewController, myCompanies, companyList;
-@synthesize createPlanViewController, map, mainView, toolbar, createPlanButton, updatePositionButton;
+@synthesize viewCompaniesViewController, waitTimeViewController, myCompanies, companyList, currentBoothPos;
+@synthesize createPlanViewController, map, me, mainView, toolbar, createPlanButton, updatePositionButton, didCreatePlan;
 
 
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
@@ -31,12 +32,16 @@
 	ViewCompaniesViewContoller * companiesView = [[ViewCompaniesViewContoller alloc] initWithNibName:nil
 																							  bundle:nil];
 	companiesView.companyList = self.companyList;
+	companiesView.myCompanies = self.myCompanies;
+	companiesView.me = self.me;
+	companiesView.didCreatePlan = self.didCreatePlan;
 	[self presentModalViewController:companiesView animated:YES];
 }
 
 -(IBAction)viewWaitTime{
 	WaitTimeViewController * waitView = [[WaitTimeViewController alloc] initWithNibName:nil bundle:nil];
 	waitView.companyList = self.companyList;
+	waitView.didCreatePlan = self.didCreatePlan;
 	[self presentModalViewController:waitView animated:YES];
 }
 
@@ -45,6 +50,8 @@
 	createPlanView.companyList = self.companyList;
 	createPlanView.myCompanies = self.myCompanies;
 	createPlanView.mainView = self;
+	createPlanView.didCreatePlan = self.didCreatePlan;
+	createPlanView.me = self.me;
 	[self presentModalViewController:createPlanView animated:YES];
 }
 
@@ -54,9 +61,149 @@
 	//createPlanView.myCompanies = self.myCompanies;
 	//createPlanView.mainView = self;
 	//[self presentModalViewController:createPlanView animated:YES];
-	NSLog(@"HelloMoto");
-	[self draw:1];
+	//NSLog(@"HelloMoto");
+	[self draw:1 start:NO];
 }
+
+-(void)dummyMethod:(id)sender
+{
+    
+}
+
+-(void)leftB:(id)sender
+{
+	//Meaning we are at the beginning of the list
+    if (self.currentBoothPos == [self.myCompanies count]-1){
+		self.currentBoothPos--;
+		NSString * buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos] name];
+        UIBarButtonItem *leftButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+                                                                      style:UIBarButtonItemStyleDone 
+                                                                     target:self
+                                                                     action:@selector(leftB:)] autorelease];
+		
+		buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos+1] name];
+        UIBarButtonItem *rightButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+																	   style:UIBarButtonItemStyleDone 
+																	  target:self
+																	  action:@selector(rightB:)] autorelease];
+        
+		
+        NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
+        [toolbarItems replaceObjectAtIndex:0 withObject:leftButt];
+        [toolbarItems replaceObjectAtIndex:4 withObject:rightButt];
+        toolbar.items = toolbarItems;
+		[self draw:self.currentBoothPos start:NO];
+	}else if ((self.currentBoothPos < [self.myCompanies count]-1) && 
+			  (self.currentBoothPos > 0)) {
+		self.currentBoothPos--;
+		NSString * buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos] name];
+        UIBarButtonItem *leftButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+                                                                      style:UIBarButtonItemStyleDone 
+                                                                     target:self
+                                                                     action:@selector(leftB:)] autorelease];
+		
+		buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos+1] name];
+        UIBarButtonItem *rightButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+																	   style:UIBarButtonItemStyleDone 
+																	  target:self
+																	  action:@selector(rightB:)] autorelease];
+        
+		
+        NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
+        [toolbarItems replaceObjectAtIndex:0 withObject:leftButt];
+        [toolbarItems replaceObjectAtIndex:4 withObject:rightButt];
+        toolbar.items = toolbarItems;
+		[self draw:self.currentBoothPos start:NO];
+	}else if (self.currentBoothPos == 0) {
+		self.currentBoothPos--;
+        UIBarButtonItem *leftButt = [[[UIBarButtonItem alloc] initWithTitle:@"" 
+                                                                      style:UIBarButtonItemStylePlain 
+                                                                     target:self
+                                                                     action:@selector(dummyMethod:)] autorelease];
+
+		NSString * buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos+1] name];
+        UIBarButtonItem *rightButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName
+																	   style:UIBarButtonItemStyleDone 
+																	  target:self
+																	  action:@selector(rightB:)] autorelease];
+        
+		
+        NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
+        [toolbarItems replaceObjectAtIndex:0 withObject:leftButt];
+        [toolbarItems replaceObjectAtIndex:4 withObject:rightButt];
+        toolbar.items = toolbarItems;
+		[self draw:self.currentBoothPos start:NO];
+	}
+	
+    
+}
+
+-(void)rightB:(id)sender
+{
+	//Meaning we are at the beginning of the list
+    if (self.currentBoothPos == -1){
+		self.currentBoothPos++;
+		NSString * buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos] name];
+        UIBarButtonItem *leftButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+                                                                      style:UIBarButtonItemStyleDone 
+                                                                     target:self
+                                                                     action:@selector(leftB:)] autorelease];
+		
+		buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos+1] name];
+        UIBarButtonItem *rightButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+																	   style:UIBarButtonItemStyleDone 
+																	  target:self
+																	  action:@selector(rightB:)] autorelease];
+        
+		
+        NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
+        [toolbarItems replaceObjectAtIndex:0 withObject:leftButt];
+        [toolbarItems replaceObjectAtIndex:4 withObject:rightButt];
+        toolbar.items = toolbarItems;
+		[self draw:self.currentBoothPos start:NO];
+	}else if ((self.currentBoothPos > -1) && (self.currentBoothPos < [self.myCompanies count]-2)) {
+		self.currentBoothPos++;
+		NSString * buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos] name];
+        UIBarButtonItem *leftButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+                                                                      style:UIBarButtonItemStyleDone 
+                                                                     target:self
+                                                                     action:@selector(leftB:)] autorelease];
+		
+		buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos+1] name];
+        UIBarButtonItem *rightButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+																	   style:UIBarButtonItemStyleDone 
+																	  target:self
+																	  action:@selector(rightB:)] autorelease];
+        
+		
+        NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
+        [toolbarItems replaceObjectAtIndex:0 withObject:leftButt];
+        [toolbarItems replaceObjectAtIndex:4 withObject:rightButt];
+        toolbar.items = toolbarItems;
+		[self draw:self.currentBoothPos start:NO];
+	}else if (self.currentBoothPos == [self.myCompanies count]-2) {
+		self.currentBoothPos++;
+		NSString * buttonName = [[self.myCompanies objectAtIndex:self.currentBoothPos] name];
+        UIBarButtonItem *leftButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+                                                                      style:UIBarButtonItemStyleDone 
+                                                                     target:self
+                                                                     action:@selector(leftB:)] autorelease];
+		
+        UIBarButtonItem *rightButt = [[[UIBarButtonItem alloc] initWithTitle:@"" 
+																	   style:UIBarButtonItemStylePlain 
+																	  target:self
+																	  action:@selector(dummyMethod:)] autorelease];
+        
+		
+        NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
+        [toolbarItems replaceObjectAtIndex:0 withObject:leftButt];
+        [toolbarItems replaceObjectAtIndex:4 withObject:rightButt];
+        toolbar.items = toolbarItems;
+		[self draw:self.currentBoothPos start:NO];
+	}
+}
+
+
 
 -(IBAction)updatePosition{
 	
@@ -86,14 +233,24 @@
  }*/
 
 
--(void)updateBottomBar:(BOOL)checked{
+-(void)updateBottomBar{
+	self.currentBoothPos = -1;
 	NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
-	UIBarButtonItem *barButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Next"
-																	   style:UIBarButtonItemStyleDone
-																	  target:self
-																	  action:@selector(previousCompany:)] autorelease];
-	[toolbarItems replaceObjectAtIndex:0 withObject:barButtonItem];
-	
+	UIBarButtonItem *leftButt = [[[UIBarButtonItem alloc] initWithTitle:@"" 
+																  style:UIBarButtonItemStylePlain 
+																 target:self
+																 action:@selector(leftB:)] autorelease];
+    
+   // self.currentBoothPos = 0;
+    NSString * buttonName = [[self.myCompanies objectAtIndex:0] name];
+    
+    UIBarButtonItem *rightButt = [[[UIBarButtonItem alloc] initWithTitle:buttonName 
+                                                                   style:UIBarButtonItemStyleDone 
+                                                                  target:self
+                                                                  action:@selector(rightB:)] autorelease];
+    
+	[toolbarItems replaceObjectAtIndex:0 withObject:leftButt];
+    [toolbarItems replaceObjectAtIndex:4 withObject:rightButt];	
 	
 	toolbar.items = toolbarItems;
 }
@@ -101,43 +258,58 @@
 
 -(void)viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
-	
-	
-	
-	if ([self.myCompanies count] > 0) {
-		[self updateBottomBar:YES];
-		
+
+	if ([self.didCreatePlan count] == 1 &&
+		 [[self.didCreatePlan objectAtIndex:0] isEqualToString:@"YES"]) {
+		NSLog(@"Did create plan");
+		[self.didCreatePlan removeAllObjects];
+		[self updateBottomBar];
+		[self draw:-2 start:NO]; //what vlaue?
+		//POSSIBLY have an elseif that changes the didcreatePlan to domething else to know it's from
+		//a button press
+	}else if ([self.didCreatePlan count] == 1) {
+		[self.didCreatePlan removeAllObjects];
+		if (self.currentBoothPos == -1) {
+			[self draw:self.currentBoothPos start:YES];			
+		}else {
+			[self draw:self.currentBoothPos start:NO];
+		}
+
+	} else{
+		NSLog(@"Did not create plan");
+		if ([self.myCompanies count] == 0) {
+			self.currentBoothPos = -1;
+			[self draw:-1 start:YES];
+		}else {
+			
+		}
+
 	}
-	[self draw:0];
-	//	[self updateBottomBar:YES];
-	
-	//if mycompanies is notempty
-	//	[self.leftButton se
-	//	[self.rightButton setTitle:@""];
-	
-	
-	//	for (int i = 0; i < [self.myCompanies count]; i++) {
-	//		NSLog(@"Names in mycompane: %@", [[self.myCompanies objectAtIndex:i] name]);
-	//	}
-	//	NSLog(@"Uh oh");
 }
 
 /*Function will need more parameters to allow the main view to only be drawn once*/
 /*Maybe pass the views and frames and then push them??*/
--(void)draw:(NSUInteger) pos{
-	map.contentSize = CGSizeMake(700, 900);
-	CGRect myFrame = CGRectMake(0, 0, 700, 900);
+-(void)draw:(NSInteger) currPosition start:(BOOL)begin{
+	map.contentSize = CGSizeMake(640, 750);
+	CGRect myFrame = CGRectMake(0, 0, 640, 750);
 	UIView * backgroundView = [[UIView alloc] initWithFrame:myFrame];
 	backgroundView.backgroundColor = [UIColor grayColor];
 	
-	int x = 100;
-	int y = 50;
+	NSString * currCompany;
+	if (!begin && (currPosition > -1)) {
+		currCompany = [[NSString alloc] initWithString:[[self.myCompanies objectAtIndex:currPosition] name]];
+	}
+	
+	
+	int table_width = 100;
+	int table_height = 50;
+	int aisle_y = 50;
+	int offset = 70;
 	int index = 0;
-	NSLog(@"within");
 	for (int sections = 0; sections < 4; sections++) {
 		for (int row = 0; row < 2; row++) {
-			for (int i = 0; i < 5; i++) {
-				myFrame = CGRectMake((i*x) + x, y, 100, 50);
+			for (int i = 0; i < 5; i++) {		
+				myFrame = CGRectMake((i*table_width) + offset, aisle_y, table_width, table_height);
 				UIView * booth1 = [[UIView alloc] initWithFrame:myFrame];
 				CGRect frameLabel = CGRectMake(10, 10, 90, 50);
 				UILabel * nameLab = [[UILabel alloc] initWithFrame:frameLabel];
@@ -155,50 +327,40 @@
 				UIImage * img2 = [[UIImage alloc] initWithContentsOfFile:@"/Users/robertdeloatch/UID465/TrackingDot.png"];
 				UIImageView * dot2 = [[UIImageView alloc] initWithFrame:myFrame];
 				[dot2 setImage:img2];
-				
-				
-				//	NSLog(@"within2");
-				//	NSLog(@"%d", pos);
-				
-				
-				
+
+				UIImage * img3 = [[UIImage alloc] initWithContentsOfFile:@"/Users/robertdeloatch/New_UID465/UID465/greendot.png"];
+				UIImageView * dot3 = [[UIImageView alloc] initWithFrame:myFrame];
+				[dot3 setImage:img3];
+
 				for(Company * c in self.myCompanies){
-					NSLog([c name]);
-					if ([[[c name] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
-						 isEqualToString:[@"Geico" stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]] && (pos == 1)
+					if ((!begin) && (currPosition > -1) 
+						&& [[[c name] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+						 isEqualToString:[currCompany stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]]
 						&& [[[c name] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
 							isEqualToString:[nameLab.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]]) {
-							NSLog(@"Who am i");
-							[nameLab addSubview:dot2];
-							//pos=0;
-						}
+							[nameLab addSubview:dot3];
+					}//if draw = -2
 					else if ([[[c name] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
 							  isEqualToString:[nameLab.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]]) {
-						NSLog(@"frewgagefg %d", pos);
 						[nameLab addSubview:dot];
 					}
+
 				}
-				
-				
-				
-				//[nameLab addSubview:dot];
-				
-				
+/*				
+				if ([[nameLab.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] 
+					isEqualToString:@"Apple"] && currPosition == -2) {
+					[nameLab addSubview:dot2];
+				}
+*/
 				[booth1 addSubview:nameLab]; //adds comapny name to the box
 				booth1.backgroundColor = [self getBackgroundColor:[self.companyList objectAtIndex:index]];
-				/*
-				 if (i % 2 == 0) {
-				 booth1.backgroundColor = [UIColor yellowColor];				
-				 }else{
-				 booth1.backgroundColor = [UIColor orangeColor];	
-				 }*/
 				[backgroundView addSubview:booth1];
 				[booth1 release];
 				index++;
 			}
-			y = y + 50;
+			aisle_y = aisle_y + 50;
 		}
-		y = y + 50;
+		aisle_y = aisle_y + 50;
 	}
 	
 	
@@ -208,10 +370,35 @@
 	[map addSubview:backgroundView];
 	[backgroundView release];
 	map.maximumZoomScale = 2.2;
-	map.minimumZoomScale = 0.45;
-	[map setZoomScale:0.5 animated:YES];
+	map.minimumZoomScale = 0.5;
+	[map setZoomScale:0.5 animated:NO];
 	map.clipsToBounds = YES;
 	map.delegate = self;
+	
+	//Make the initial view
+	if (begin){
+        NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
+        UIBarButtonItem *leftButt = [[[UIBarButtonItem alloc] initWithTitle:@"" 
+																	  style:UIBarButtonItemStylePlain 
+																	 target:self
+																	 action:@selector(dummyMethod:)] autorelease];
+        UIBarButtonItem *rightButt = [[[UIBarButtonItem alloc] initWithTitle:@"" 
+																	   style:UIBarButtonItemStylePlain 
+																	  target:self
+                                                                      action:@selector(dummyMethod:)] autorelease];
+        [toolbarItems replaceObjectAtIndex:0 withObject:leftButt];
+        [toolbarItems replaceObjectAtIndex:4 withObject:rightButt];
+        toolbar.items = toolbarItems;
+    }else {
+		NSMutableArray * toolbarItems = [[NSMutableArray arrayWithArray:toolbar.items] retain];
+		UIBarButtonItem * middle = [[[UIBarButtonItem alloc] initWithTitle:@"Edit plan or position" 
+																	 style:UIBarButtonItemStyleBordered
+																	target:self
+																	action:@selector(createPlan)] autorelease];
+		[toolbarItems replaceObjectAtIndex:2 withObject:middle];
+        toolbar.items = toolbarItems;
+	}
+
 }
 
 
@@ -239,8 +426,10 @@
     self.companyList = [self assembleCompanies];
 	
 	self.myCompanies = [[NSMutableArray alloc] init];
-	NSLog(@"%d", [self.companyList count]);
-	
+//	NSLog(@"%d", [self.companyList count]);
+	self.didCreatePlan = [[NSMutableArray alloc] init];
+	self.currentBoothPos = -5;
+	self.me = [[[Person alloc] init] autorelease];
 	/*	
 	 UIImageView *temp = [[UIImageView alloc] initWithImage:[UIImage imageWithData:
 	 [NSData dataWithContentsOfURL:
@@ -297,6 +486,8 @@
 	 map.clipsToBounds = YES;
 	 map.delegate = self;
 	 */
+
+	
 }
 
 -(UIColor *)getBackgroundColor:(Company *) comp{

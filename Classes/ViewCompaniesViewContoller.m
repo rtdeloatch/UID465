@@ -9,13 +9,15 @@
 #import "ViewCompaniesViewContoller.h"
 #import "CompanyInformationViewController.h"
 #import "Company.h"
+#import "Person.h"
 
 @implementation ViewCompaniesViewContoller
-@synthesize companyList;
+@synthesize companyList, sortedCompanies, me, myCompanies, didCreatePlan;
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
 }
+
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -27,12 +29,17 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+	NSSortDescriptor *sortDes;
+	sortDes = [[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES] autorelease];
+	NSArray * newSortDes = [NSArray arrayWithObject:sortDes];
+	self.sortedCompanies = [self.companyList sortedArrayUsingDescriptors:newSortDes];
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -44,7 +51,7 @@
 
 //Specifies the number of rows in a given section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-	return [self.companyList count];
+	return [self.sortedCompanies count];
 }
 
 //Number of sections in table
@@ -64,7 +71,7 @@
 	}
     
 	// Configure the cell.
-	cell.textLabel.text = [[self.companyList objectAtIndex:indexPath.row] name];
+	cell.textLabel.text = [[self.sortedCompanies objectAtIndex:indexPath.row] name];
 	return cell;
 }
 
@@ -80,7 +87,10 @@
 	
 	CompanyInformationViewController * companyInfoView = [[CompanyInformationViewController alloc] initWithNibName:nil
 																						   bundle:nil];
-	companyInfoView.company = [self.companyList objectAtIndex:indexPath.row];
+	companyInfoView.company = [self.sortedCompanies objectAtIndex:indexPath.row];
+	companyInfoView.me = self.me;
+	companyInfoView.myCompanies = self.myCompanies;
+	companyInfoView.didCreatePlan = self.didCreatePlan;
 	[self presentModalViewController:companyInfoView animated:YES];
 	//[self.navigationController pushViewController:updateWaitView animated:YES];
 }

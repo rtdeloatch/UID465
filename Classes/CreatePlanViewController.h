@@ -17,8 +17,9 @@
 	UITextField * yearField;
 	UITextField * gpaField;
 	UISegmentedControl * citizenField;
-	Person * person;
+	Person * me;
 	UID465ViewController * mainView;
+	NSMutableArray * didCreatePlan;
 }
 
 @property (nonatomic,retain) NSArray * companyList;
@@ -27,10 +28,13 @@
 @property (nonatomic,retain) IBOutlet UITextField * yearField;
 @property (nonatomic,retain) IBOutlet UITextField * gpaField;
 @property (nonatomic,retain) IBOutlet UISegmentedControl * citizenField;
-@property (nonatomic, retain) Person * person;
+@property (nonatomic, retain) Person * me;
 @property (nonatomic, retain) UID465ViewController * mainView;
+@property(nonatomic, retain) NSMutableArray * didCreatePlan;
 
 -(IBAction)back;
 -(IBAction)generateQualifyList;
+-(IBAction)editCurrentPlan;
+-(IBAction)editCurrentPosition;
 
 @end

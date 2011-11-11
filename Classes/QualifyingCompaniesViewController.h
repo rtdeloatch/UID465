@@ -13,14 +13,15 @@
 	NSArray * companyList;
 	NSMutableArray * myCompanies;
 	UID465ViewController * mainView;
-	UITableView * tableView;
+	//UITableView * tableView;
+	NSMutableArray * didCreatePlan;
 }
 
 @property (nonatomic, retain) NSArray * companyList;
 @property (nonatomic, retain) NSMutableArray * myCompanies;
 @property (nonatomic, retain) UID465ViewController * mainView;
-@property (nonatomic, retain) IBOutlet UITableView * tableView;
-
+//@property (nonatomic, retain) IBOutlet UITableView * tableView;
+@property (nonatomic, retain) NSMutableArray * didCreatePlan;
 -(IBAction)back;
 -(IBAction)done;
 

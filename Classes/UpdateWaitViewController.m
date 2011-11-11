@@ -10,9 +10,12 @@
 #import "Company.h"
 
 @implementation UpdateWaitViewController
-@synthesize company, companyName, shortWait, mediumWait, longWait;//, select;
+@synthesize company, companyName, shortWait, mediumWait, longWait, didCreatePlan;//, select;
 
 -(IBAction)back{
+	//if ([self.myCompanies count] > 0) {
+	[self.didCreatePlan addObject:[[NSString alloc] initWithString:@"NO"]];
+	//}
 	[self dismissModalViewControllerAnimated:YES];
 }
 
@@ -21,10 +24,10 @@
 //	UID465AppDelegate * del = ((UID465AppDelegate *)([[UIApplication sharedApplication] delegate]));
 //	[[del.companyList objectAtIndex:select] setWait_time:@"l"];
 	[company setWait_time:@"l"];
-	
+
 	self.mediumWait.backgroundColor = [UIColor clearColor];
 	self.longWait.backgroundColor = [UIColor clearColor];
-	self.shortWait.backgroundColor = [UIColor blueColor];
+	self.shortWait.backgroundColor = [UIColor yellowColor];
 	
 }
 
@@ -32,14 +35,14 @@
 	[company setWait_time:@"m"];
 	self.longWait.backgroundColor = [UIColor clearColor];
 	self.shortWait.backgroundColor = [UIColor clearColor];
-	self.mediumWait.backgroundColor = [UIColor blueColor];	
+	self.mediumWait.backgroundColor = [UIColor orangeColor];	
 }
 
 -(IBAction)longWaitPress{
 	[company setWait_time:@"h"];
 	self.mediumWait.backgroundColor = [UIColor clearColor];
 	self.shortWait.backgroundColor = [UIColor clearColor];
-	self.longWait.backgroundColor = [UIColor blueColor];
+	self.longWait.backgroundColor = [UIColor redColor];
 }
 
 
@@ -65,11 +68,11 @@
 									[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
 
 	if ([string isEqualToString:@"h"]) {
-		self.longWait.backgroundColor = [UIColor blueColor];
+		self.longWait.backgroundColor = [UIColor redColor];
 	}else if([string isEqualToString:@"m"]){
-		self.mediumWait.backgroundColor = [UIColor blueColor];
+		self.mediumWait.backgroundColor = [UIColor orangeColor];
 	}else{
-		self.shortWait.backgroundColor = [UIColor blueColor];
+		self.shortWait.backgroundColor = [UIColor yellowColor];
 	}
 }
 

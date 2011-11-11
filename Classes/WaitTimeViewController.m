@@ -11,7 +11,7 @@
 #import "UpdateWaitViewController.h"
 
 @implementation WaitTimeViewController
-@synthesize companyList;//, updateWaitViewController;//, company;
+@synthesize companyList, didCreatePlan, sortedCompanies;//, updateWaitViewController;//, company;
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
@@ -31,12 +31,17 @@
 	[super viewWillAppear:animated];
 }
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+	NSSortDescriptor *sortDes;
+	sortDes = [[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES] autorelease];
+	NSArray * newSortDes = [NSArray arrayWithObject:sortDes];
+	self.sortedCompanies = [self.companyList sortedArrayUsingDescriptors:newSortDes];
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -48,7 +53,7 @@
 
 //Specifies the number of rows in a given section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-	return [self.companyList count];
+	return [self.sortedCompanies count];
 //	UID465AppDelegate * del = ((UID465AppDelegate *)([[UIApplication sharedApplication] delegate]));
 //	return [del.companyList count];
 }
@@ -70,7 +75,7 @@
     
 	// Configure the cell.
 //	UID465AppDelegate * del = ((UID465AppDelegate *)([[UIApplication sharedApplication] delegate]));
-	cell.textLabel.text = [[self.companyList objectAtIndex:indexPath.row] name];
+	cell.textLabel.text = [[self.sortedCompanies objectAtIndex:indexPath.row] name];
 //	cell.textLabel.text = [[del.companyList objectAtIndex:indexPath.row] name];
 	return cell;
 }
@@ -91,7 +96,8 @@
 //	updateWaitView.select = indexPath.row;
 
 //	[del.companyList objectAtIndex:indexPath.row];//
-	updateWaitView.company = [self.companyList objectAtIndex:indexPath.row];
+	updateWaitView.company = [self.sortedCompanies objectAtIndex:indexPath.row];
+	updateWaitView.didCreatePlan = self.didCreatePlan;
 	[self presentModalViewController:updateWaitView animated:YES];
 
 	//[self.navigationController pushViewController:updateWaitView animated:YES];

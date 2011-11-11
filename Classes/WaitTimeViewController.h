@@ -15,9 +15,13 @@
 	NSArray * companyList;
 //	UpdateWaitViewController * updateWaitViewController;
 //	Company * company;
+	NSMutableArray * didCreatePlan;
+	NSArray * sortedCompanies;
 }
 
 @property(nonatomic,retain) NSArray * companyList;
+@property(nonatomic,retain) NSArray * sortedCompanies;
+@property(nonatomic,retain) NSMutableArray * didCreatePlan;
 //@property(nonatomic, retain) UpdateWaitViewController * updateWaitViewController;
 //@property(nonatomic, retain) Company * company;
 -(IBAction)back;

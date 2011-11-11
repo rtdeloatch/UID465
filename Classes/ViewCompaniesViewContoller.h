@@ -8,12 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-
+@class Person;
 @interface ViewCompaniesViewContoller : UIViewController <UITableViewDataSource, UITableViewDelegate>{
 	NSArray * companyList;
+	NSArray * sortedCompanies;
+	NSMutableArray * myCompanies;
+	NSMutableArray * didCreatePlan;
+	Person * me;
 }
 
 @property(nonatomic,retain) NSArray * companyList;
+@property(nonatomic,retain) NSArray * sortedCompanies;
+@property(nonatomic,retain) NSMutableArray * myCompanies;
+@property(nonatomic,retain) NSMutableArray * didCreatePlan;
+@property(nonatomic,retain) Person * me;
 -(IBAction)back;
 
 @end

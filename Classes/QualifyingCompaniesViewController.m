@@ -11,7 +11,7 @@
 #import "Company.h"
 
 @implementation QualifyingCompaniesViewController
-@synthesize companyList, myCompanies, mainView, tableView;
+@synthesize companyList, myCompanies, mainView, didCreatePlan;//, tableView;
 
 -(IBAction)back{
 	[self dismissModalViewControllerAnimated:YES];
@@ -20,6 +20,10 @@
 -(IBAction)done{
 	UIViewController * parent = self.parentViewController;
 	UIViewController * grandParent = [parent parentViewController];
+	
+	if ([self.myCompanies count] > 0) {
+		[self.didCreatePlan addObject:[[NSString alloc] initWithString:@"YES"]];
+	}
 	
 	[grandParent dismissModalViewControllerAnimated:YES];
 	
@@ -56,6 +60,16 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle 
+forRowAtIndexPath:(NSIndexPath *)indexPath{
+	if (editingStyle == UITableViewCellEditingStyleDelete) {
+		// Delete the row from the data source.
+		[self.myCompanies removeObjectAtIndex:indexPath.row];
+		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
+						 withRowAnimation:UITableViewRowAnimationFade];
+	}  
+}
 
 //Specifies the number of rows in a given section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

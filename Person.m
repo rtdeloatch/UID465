@@ -23,6 +23,7 @@
     person.gpa = new_gpa;
     person.citizen = new_citizen;
     person.position = new_position;
+	//Add year
     return person;
 }
 

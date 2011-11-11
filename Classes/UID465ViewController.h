@@ -12,7 +12,7 @@
 @class WaitTimeViewController;
 @class Company;
 @class CreatePlanViewController;
-
+@class Person;
 @interface UID465ViewController : UIViewController <UIScrollViewDelegate> {
 	UIScrollView * map;
 	ViewCompaniesViewContoller* viewCompaniesViewController;
@@ -24,6 +24,9 @@
     UIToolbar * toolbar;
     UIBarButtonItem * createPlanButton;
     UIBarButtonItem * updatePositionButton;
+	int currentBoothPos;
+	NSMutableArray * didCreatePlan; //so that it's passed by reference
+	Person * me;
 }
 
 @property(nonatomic,retain) ViewCompaniesViewContoller* viewCompaniesViewController;
@@ -36,14 +39,17 @@
 @property(nonatomic,retain) IBOutlet UIToolbar * toolbar;
 @property(nonatomic,retain) IBOutlet UIBarButtonItem * createPlanButton;
 @property(nonatomic,retain) IBOutlet UIBarButtonItem * updatePositionButton;
+@property(nonatomic) int currentBoothPos;
+@property(nonatomic, retain) NSMutableArray * didCreatePlan;
+@property(nonatomic,retain) Person * me;
 
 -(IBAction)viewCompanies;
 -(IBAction)viewWaitTime;
 -(IBAction)createPlan;
 -(IBAction)updatePosition;
--(void)draw:(NSUInteger) pos;
+-(void)draw:(NSInteger) currPosition start:(BOOL)begin;
 - (NSArray *)assembleCompanies;
 -(UIColor *)getBackgroundColor:(Company *)comp;
--(void)updateBottomBar:(BOOL)checked;
+-(void)updateBottomBar;
 @end
 
